@@ -1,3 +1,292 @@
-main.toys-main {
- padding: 30px 0;
+h2 {
+    margin: 0;
+    max-width: 68px;
+    margin-bottom: 15px;
+}
+
+.color,
+.delivery,
+.amount {
+    margin-top: 42px;
+    
+}
+
+.picture:hover::before,
+.picture:active::before {
+    content: 'Learn more';
+    text-transform: uppercase;
+    color: #1E0606;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+    display: block;
+    font-size: 26px;
+    line-height: 29px; 
+    width: 100%;
+    height: 100%;
+    padding: 73px;  
+    position: absolute;
+    opacity: 90%;
+    background: #E5EAF8;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 70px;
+}
+
+.picture:hover::before {
+    opacity: 90%;
+}
+
+.picture:active::before {    
+    opacity: 0.67;
+}
+
+h3 {
+    margin: 0;
+}
+
+.outline {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    background: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 161px;
+    padding: 9px;
+    border: none;
+    text-transform: uppercase;
+    display: block;
+}
+
+.button:hover {
+    background: #C29974;
+}
+
+.button:active {
+    background: #CFAF91;
+}
+
+.button:disabled {
+   background: #C1C1C1;
+}
+
+/* TOYS */
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 110%;
+    color: #1E0606;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.breadcrumbs {
+    display: flex;
+    margin-bottom: 50px;
+    padding: 0; 
+}
+
+.sidebar {
+    background-color:  rgba(125, 151, 218, 0.2); 
+    justify-content: space-between;
+    padding: 42px 125px;
+}
+
+.cost {
+    margin: 42px 94px 123px 0px;
+}
+
+.checkboxes {
+    margin-bottom: 18px;
+}
+
+.checkbox {
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+}
+
+.checkbox label {
+    position: relative;
+    padding-left: 30px;
+    margin-right: 33px;
+    cursor: pointer;
+}
+
+.checkbox label:hover {
+    text-decoration-line: underline;
+}
+
+.checkbox label:before,
+.checkbox label:after  {
+    content: '';
+    position: absolute;
+}
+
+.checkbox label:before {
+    width: 19px;
+    height: 19px;
+    top: 0;
+    left: 0;
+    border: 2px solid #C29974;
+}
+.checkbox label:after {
+    width: 19px;
+    height: 19px;
+    top: 5px;
+    left: 5px;
+    background-repeat: no-repeat;
+    background-image: url("../images/check-mark.png");
+    opacity: 0;
+}
+
+.input:checked + label:after {
+    opacity: 1;
+} 
+
+.input:checked + label::before {
+    background-color: #FFFFFF;
+}
+
+.input {
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+}
+
+.fake-radio {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #C29974;
+    border-radius: 50%;
+    position: relative;
+}
+
+.fake-radio::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 15%;
+    left: 10%;
+    background-color: #C29974;
+    opacity: 0;
+    border-radius: 50%;
+}
+
+.radios:checked + .fake-radio::before {
+    opacity: 1;
+}
+
+.delivery {
+    margin-left: 130px;
+    position: relative;
+}
+
+.radio {
+    list-style-type: none;
+    padding: 0;
+}
+
+.amount {
+    margin-left: 70px;
+    margin-right: 60px;
+    position: relative;
+}
+
+.prices {
+    list-style-type: none;
+    padding: 0;
+}
+
+.range {
+    width: 80px;
+    height: 35px;
+    padding: 0;
+    background: #FFFFFF;
+    border: none;
+}
+
+.range:hover {
+    background: #EDDEEB;
+    border: none;
+}
+
+.checked {
+    background: #F3D0DB;
+}
+
+.apply {
+    max-width: 95px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+    margin-top: 79px;
+}
+
+/* PRODUCTS */
+
+.row {
+    padding: 0;
+    list-style-type: none;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 19px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+    color: #1E0606;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+    margin-bottom: 78px;
+}
+
+.pagination {
+    justify-content: space-between;
+}
+
+.pages {
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.arrow {
+    margin-left: 113px;
+    margin-right: 113px;
+    max-width: 8px;
+    max-height: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    margin-right: 64px;
+    max-width: 10px;
+    max-height: 20px;
+    width: 100%;
+    height: 100%;
+    color: #1E0606;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    size: 16px;
+    text-transform: uppercase;
+}
+
+.special {
+    color: #C29974;
 }
