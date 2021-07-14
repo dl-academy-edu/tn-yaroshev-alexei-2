@@ -1,0 +1,48 @@
+.button {
+    background: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 161px;
+    padding: 9px;
+    border: none;
+    text-transform: uppercase;      
+}
+  
+.button:hover {
+    background: #C29974;
+}
+  
+.button:active {
+    background: #CFAF91;
+}
+  
+.button:disabled {
+   background: #C1C1C1;
+}
+  
+.special {
+    background: #C1C1C1;
+}
+.slide-button-special {
+    background-color:  rgba(30, 6, 6, 0.6);
+    height: 3px;
+    width: 31px;
+    margin-bottom: 11px;
+    border: 0px;
+}
+  
+.slide-button {
+    background-color: #D6CAC2;
+    height: 3px;
+    width: 31px;
+    margin-bottom: 11px;
+    border: 0px;
+}
+  
+.slide-button:hover {
+    background-color: #725F5B;
+    height: 3px;
+    width: 31px;
+}

@@ -1,28 +1,143 @@
+
+.button,
+.undertable-text,
+.block,
+.group,
+.description, 
+.price,
+.picture:hover::before,
+.picture:active::before,
+.breadcrumbs,
+.contact-title,
+.contact-title {
+    -webkit-text-align: center;
+        -moz-text-align: center;    
+            text-align: center;
+}
+
+img,
+.button,
+.checkbox label:before,
+.checkbox label:after,
+.fake-radio::before,
+.popup-open,
+.popup-overlay-open {
+    -webkit-display: block;
+        -moz-display: block;    
+            display: block;
+}
+
+.input,
+.popup-overlay,
+.popup-form,
+.radios {
+    -webkit-display: none;
+        -moz-display: none;    
+            display: none;
+}
+
+.breadcrumbs,
+.sidebar,
+.category,
+.categories-first,
+.categories-second,
+.blog-articles,
+.contacts,
+.contact-form fieldset,
+.contact-wrapper,
+.contact-line,
+.banner-main,
+.underservice,
+.arrows,
+.about,
+.brands-outline,
+.prices,
+.rating-one,
+.pagination,
+.pages,
+.header,
+.header-list,
+.footer-first,
+.footer-search,
+.social,
+.footer-second,
+.footer-link,
+.footer-company_rating  {
+    -webkit-display: flex;
+        -moz-display: flex;    
+            display: flex;
+}
+
+.fake-radio,
+.row-picture {
+    -webkit-display: inline-block;
+        -moz-display: inline-block;    
+            display: inline-block;
+}
+
+.breadcrumbs,
+.group,
+.header,
+.header-list,
+.footer-link,
+.footer-company_rating,
+.underservice {
+    -webkit-align-items: center;
+        -moz-align-items: center; 
+            align-items: center;
+}
+
+
+h3 {
+    margin: 0;
+}
+
+.container {
+    max-width: 1220px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+a {
+    text-decoration: none;
+    color: #1E0606;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+a:active {
+    opacity: 20%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hidden {
+    overflow: hidden;
+    font-size: 0;
+}
+
+
+
 // Подключение компонентов
 @import "./header/header";
 @import "./footer/footer";
 
-body {
-  font-family: Oswald, sans-serif;
-}
-
-.container {
-  width: 100%;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.title-block {
-  margin: 0 0 20px 0;
-
-  &_one {
-    font-size: 30px;
-    text-transform: uppercase;
-  }
-  &_two {
-    font-size: 25px;
-    max-width: 500px;
-  }
-}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="../../components/common.scss">
+    <link rel="stylesheet" href="../contacts/style.scss">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head> 
+<body>
+    @@include('header/index.html')
+    <main>
+    <section class="banner container">
+        <h1 class="title">Contact  Us</h1>
+        <ul class="outline breadcrumbs">
+            <li><a href="#" class="pointer-home">Home</a></li>
+            <li><p class="pointer-next">Contact us</p></li>
+        </ul>
+        <div class="contacts">
+            <h1 class="hidden">Contacts</h1>
+            <form action="#" method="POST" class="contact-form">
+                <fieldset class="contact-wrapper">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" placeholder="Ivan Ivanov" class="contact-name">
+                </fieldset> 
+                <fieldset class="contact-line">
+                    <div class="contact-wrapper contact-block">
+                        <label for="contact-phone">Phone</label>
+                        <input type="tel" id="contact-phone" class="contact-phone">    
+                    </div>
+                    <div class="contact-wrapper contact-block">
+                        <label for="contant-email">E-mail</label>
+                        <input type="email" id="contant-email" class="contant-email">
+                    </div>
+                </fieldset>
+                <fieldset class="contact-wrapper">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="5" class="message"></textarea>
+                </fieldset>
+                <fieldset>
+                    <div class="checkbox">
+                        <input class="input" type="checkbox" id="contant-cach">
+                        <label for="contant-cach">By clicking on the button, you consent to the processing of your personal data</label>                           
+                    </div>
+                </fieldset>
+                <button type="submit" class="button">Submit</button>
+                </form>
+            <div class="texts">
+                <p class="letter">Our support team are on-hand to assist with any issues you are experiencing.</p>
+                <p class="letter">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                <p class="letter special">An expert is waiting to help you!</p>
+            </div>
+        </div>
+    </section>
+    </main>
+    @@include('footer/index.html')
+</body>
+</html>    

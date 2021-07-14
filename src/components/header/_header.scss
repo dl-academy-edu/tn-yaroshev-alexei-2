@@ -1,24 +1,41 @@
-header {
-  background-color: #89f7fe;
-  height: 80px;
-  display: flex;
-  align-items: center;
+/* HEADER */
 
-  span {
-    padding-right: 20px;
-  }
-
-  a {
-    color: #000;
-    text-decoration: none;
-
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    &:hover {
-      border-bottom: 1px solid #000;
-    }
-  }
+.header {
+  padding: 40px 0 60px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
 }
 
+.header-logo {
+  max-width: 100px;
+}
 
+.header-nav {
+  margin: 0 auto 0 60px;
+}
+
+.header-item {
+  margin-right: 20px;
+}
+
+.header-search {
+  margin-right: 23px;
+}
+
+.pointer-home {
+  font-style: italic;
+}
+
+.pointer-home::after {
+  content: '>'; 
+  margin-left: 20px; 
+  margin-right: 20px; 
+  color: #7f7f7f; 
+}
+
+.pointer-next {
+  opacity: 50%;
+  font-style: italic;
+  margin: 0;
+}
