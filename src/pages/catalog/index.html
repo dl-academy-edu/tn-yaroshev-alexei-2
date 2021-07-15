@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>CATALOG</title>
-    <link rel="stylesheet" href="../catalog/style.scss">
-    <link rel="stylesheet" href="../../components/common.scss">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/common.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head> 
@@ -18,36 +18,42 @@
                     <li><p class="pointer-next">Catalog</p></li>
                 </ul>
                 <ul class="outline category">
-                    <li class="category-first group">
-                        <a href="#">
-                            <p class="service-first block">APPAREL KIDS</p>
-                        </a>
-                    </li>
-                    <li class="category-second group">
-                        <a href="#">  
-                            <p class="service-second block">HOLIDAY SHOP</p>
-                        </a>
-                    </li>
-                    <li class="category-third group">
-                        <a href="#">
-                            <p class="service-third block">TOYS</p>
-                        </a>
-                    </li>
-                    <li class="category-fourth group">
-                        <a href="#">
-                            <p class="service-fourth block">ACCESSORIES</p>
-                        </a>
-                    </li>
-                    <li class="category-fifth group">
-                        <a href="#">
-                            <p class="service-fifth block">SALE</p>
-                        </a>
-                    </li>
-                    <li class="category-sixth group">
-                        <a href="#">
-                            <p class="service-sixth block">APPAREL ADULTS</p>
-                        </a>
-                    </li>
+                    @@include('service/index.html',{
+                        "class-li":"category-first",
+                        "href":"#",
+                        "class-p":"service-first",
+                        "text":"APPAREL KIDS"
+                    })
+                    @@include('service/index.html',{
+                        "class-li":"category-second",
+                        "href":"#",
+                        "class-p":"service-second",
+                        "text":"HOLIDAY SHOP"
+                    })
+                    @@include('service/index.html',{
+                        "class-li":"category-third",
+                        "href":"#",
+                        "class-p":"service-third",
+                        "text":"TOYS"
+                    })
+                    @@include('service/index.html',{
+                        "class-li":"category-fourth",
+                        "href":"#",
+                        "class-p":"service-fourth",
+                        "text":"ACCESSORIES"
+                    })
+                    @@include('service/index.html',{
+                        "class-li":"category-fifth",
+                        "href":"#",
+                        "class-p":"service-fifth",
+                        "text":"SALE"
+                    })
+                    @@include('service/index.html',{
+                        "class-li":"category-sixth",
+                        "href":"#",
+                        "class-p":"service-sixth",
+                        "text":"APPAREL ADULTS"
+                    })
                 </ul>
             <div class="under-service">
                 <h2 class="under-title">Product Description</h2>

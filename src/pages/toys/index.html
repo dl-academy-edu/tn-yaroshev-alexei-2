@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Toys</title>
-    <link rel="stylesheet" href="../toys/style.scss">
-    <link rel="stylesheet" href="../../components/common.scss">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head> 
@@ -37,55 +37,37 @@
             <div class="color">
                 <h2>Color</h2>
                     <ul class="checkbox">
-                        <li class="checkboxes">
-                            <div class="checkbox">
-                                <input class="input" type="checkbox" id="contant-cach-1" checked>
-                            <label for="contant-cach-1">Black</label>                                                    
-                            </div>
-                        </li>
-                        <li class="checkboxes">
-                            <div class="checkbox">
-                                <input class="input" type="checkbox" id="contant-cach-2">
-                            <label for="contant-cach-2">Blue</label>                                                    
-                            </div>
-                        </li>
-                        <li class="checkboxes">
-                            <div class="checkbox">
-                                <input class="input" type="checkbox" id="contant-cach-3">
-                            <label for="contant-cach-3">Green</label>                                                    
-                            </div>
-                        </li>
-                        <li class="checkboxes">
-                            <div class="checkbox">
-                                <input class="input" type="checkbox" id="contant-cach-4">
-                            <label for="contant-cach-4">White</label>                                                    
-                            </div>
-                        </li>
+                        @@include('checkbox/index.html',{
+                            "id":"contant-cach-1",
+                            "label":"contant-cach-1",
+                            "text":"Black"
+                        })
+                        @@include('checkbox/index.html',{
+                            "id":"contant-cach-2",
+                            "label":"contant-cach-2",
+                            "text":"Blue"
+                        })
+                        @@include('checkbox/index.html',{
+                            "id":"contant-cach-3",
+                            "label":"contant-cach-3",
+                            "text":"Green"
+                        })
+                        @@include('checkbox/index.html',{
+                            "id":"contant-cach-4",
+                            "label":"contant-cach-4",
+                            "text":"White"
+                        })
                     </ul>
             </div>
             <div class="delivery">
                 <h2>Delivery</h2>
                 <ul class="radio">
-                    <li>
-                        <label>
-                            <input name="Delivery"
-                                   type="radio"
-                                   value="Free shipping"
-                                   class="radios">
-                            <span class="fake-radio"></span>
-                            <span>Free shipping</span>
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input name="Delivery"
-                                   type="radio"
-                                   value="Fast shipping"
-                                   class="radios">
-                            <span class="fake-radio"></span>
-                            <span>Fast shipping</span>
-                        </label>
-                    </li>
+                    @@include('radio/index.html',{
+                        "text":"Free shipping"
+                    })
+                    @@include('radio/index.html',{
+                        "text":"Fast shipping"
+                    })
                 </ul>
             </div>
             <div class="amount">
@@ -103,58 +85,58 @@
     </section>  
     <section class="products container">
         <ul class="row">
-            <li class="row-picture">
-                <a href="">
-                    <div class="picture"><img src="../images/products/products1.png" alt="" width="380" height="385"></div>
-                </a>
-                <h3 class="description">SHARKY BEAN BAG CHAIR COVER</h3>
-                <div class="price">$60.00 USD</div>
-            </li>
-            <li class="row-picture">
-                <a href="">
-                    <div class="picture"><img src="../images/products/products2.png" alt="" width="380" height="385"></div>
-                </a>
-                <h3 class="description">BRASS DECO FRAMES</h3>
-                <div class="price">$66.00 USD</div>
-            </li>
-            <li class="row-picture">
-                <a href="">
-                    <div class="picture"><img src="../images/products/products3.png" alt="" width="380" height="385"></div>
-                </a>
-                <h3 class="description">CIBO FULL APRON</h3>
-                <div class="price">$60.00 USD</div>
-            </li>
-            <li class="row-picture">
-                <a href="">
-                    <div class="picture"><img src="../images/products/products4.png" alt="" width="380" height="385"></div>
-                </a>
-                <h3 class="description">GATCHA GATCHA GUMBALL MACHINE</h3>
-                <div class="price">$56.00 USD</div>
-            </li>
-            <li class="row-picture">
-                <a href="">
-                    <div class="picture"><img src="../images/products/products5.png" alt="" width="380" height="385"></div>
-                </a>
-                <h3 class="description">CHRISTMAS ADVENT SCENTED CANDLE</h3>
-                <div class="price">$29.00 USD</div>
-            </li>
-            <li class="row-picture">
-                <a href="">
-                    <div class="picture"><img src="../images/products/products6.png" alt="" width="380" height="382"></div>
-                </a>
-                <h3 class="description">TANGLE SPINNING TEA LIGHT</h3>
-                <div class="price">$56.00 USD</div>
-            </li>
+            @@include('row-picture/index.html',{
+                "href":"#",
+                "img":"../../static/images/products/products1.png",
+                "alt":"",
+                "text":"BRASS DECO FRAMES",
+                "price":"66.00"
+            })
+            @@include('row-picture/index.html',{
+                "href":"#",
+                "img":"../../static/images/products/products2.png",
+                "alt":"",
+                "text":"SHARKY BEAN BAG CHAIR COVER",
+                "price":"60.00"
+            })
+            @@include('row-picture/index.html',{
+                "href":"#",
+                "img":"../../static/images/products/products3.png",
+                "alt":"",
+                "text":"SHARKY BEAN BAG CHAIR COVER",
+                "price":"60.00"
+            })
+            @@include('row-picture/index.html',{
+                "href":"#",
+                "img":"../../static/images/products/products4.png",
+                "alt":"",
+                "text":"GATCHA GATCHA GUMBALL MACHINE",
+                "price":"56.00"
+            })
+            @@include('row-picture/index.html',{
+                "href":"#",
+                "img":"../../static/images/products/products5.png",
+                "alt":"",
+                "text":"CHRISTMAS ADVENT SCENTED CANDLE",
+                "price":"29.00"
+            })
+            @@include('row-picture/index.html',{
+                "href":"#",
+                "img":"../../static/images/products/products6.png",
+                "alt":"",
+                "text":"TANGLE SPINNING TEA LIGHT",
+                "price":"56.00"
+            })
         </ul>
         <div class="pagination">
-            <img src="../images/arrow-left.png" alt="" width="13" height="26" class="arrow">
+            <img src="../../static/images/arrow-left.png" alt="" width="13" height="26" class="arrow">
             <ul class="pages">
                 <li><a href="#" class="page special">1</a></li>
                 <li><a href="#" class="page">2</a></li>
                 <li><a href="#" class="page">3</a></li>
                 <li><a href="#" class="page">4</a></li>
             </ul> 
-            <img src="../images/arrow-right.png" alt="" width="13" height="26" class="arrow">  
+            <img src="../../static/images/arrow-right.png" alt="" width="13" height="26" class="arrow">  
         </div>           
     </section>
     </main> 

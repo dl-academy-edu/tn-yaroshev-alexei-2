@@ -1,0 +1,7 @@
+.input:checked + label:after {
+    opacity: 1;
+} 
+
+.input:checked + label::before {
+    background-color: #FFFFFF;
+}
