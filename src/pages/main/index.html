@@ -36,7 +36,7 @@
                     <a href="#" class="button banner-js">EXPLORE NOW</a>
                 </div>
                 <div>
-                    <img src="../images/banner1.png" alt="" width="635" height="461" class="banner-logo">
+                    <img src="../../static/images/banner1.png" alt="" width="635" height="461" class="banner-logo">
                 </div>
             </div>    
             <div class="undertable">
@@ -46,38 +46,42 @@
         <section class="service container">
             <h2 class="service-title">Category Products</h2>
             <ul class="outline category">
-                <li class="category-first group">
-                    <a href="#">
-                        <p class="service-first block">APPAREL KIDS</p>
-                    </a>
-                </li>
-                <li class="category-second group">
-                    <a href="#">  
-                        <p class="service-second block">HOLIDAY SHOP</p>
-                    </a>
-                </li>
-                <li class="category-third group">
-                    <a href="#">
-                        <p class="service-third block">TOYS</p>
-                    </a>
-                </li>
-                <li class="category-fourth group">
-                    <a href="#">
-                        <p class="service-fourth block">ACCESSORIES</p>
-                    </a>
-                </li>
+                @@include('service/index.html',{
+                    "class-li":"category-first",
+                    "href":"#",
+                    "class-p":"service-first",
+                    "text":"APPAREL KIDS"
+                })
+                @@include('service/index.html',{
+                    "class-li":"category-second",
+                    "href":"#",
+                    "class-p":"service-second",
+                    "text":"HOLIDAY SHOP"
+                })
+                @@include('service/index.html',{
+                    "class-li":"category-third",
+                    "href":"#",
+                    "class-p":"service-third",
+                    "text":"TOYS"
+                })
+                @@include('service/index.html',{
+                    "class-li":"category-fourth",
+                    "href":"#",
+                    "class-p":"service-fourth",
+                    "text":"ACCESSORIES"
+                })
             </ul>
             <div class="underservice">
                 <ul class="outline arrows">
-                    <li><img src="../images/arrow-left.png" alt="" width="13" height="26" class="arrow1"></li>
-                    <li><img src="../images/arrow-right.png" alt="" width="13" height="26" class="arrow1"></li>
+                    <li><img src="../../static/images/arrow-left.png" alt="" width="13" height="26" class="arrow1"></li>
+                    <li><img src="../../static/images/arrow-right.png" alt="" width="13" height="26" class="arrow1"></li>
                 </ul>
                 <p class="underservice text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
             </div>
         </section> 
         <section class="about container">
             <div>
-                <img src="../../components/images/about1.jpg" alt="" width="480" height="559" class="about-logo">
+                <img src="../../static/images/about1.jpg" alt="" width="480" height="559" class="about-logo">
             </div>
             <div class="about-first">
                 <h2 class="about-title">DELIVERY</h2>
@@ -87,16 +91,18 @@
                 <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply</p>
                 <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!
                 </p>
-                @@include('button/index.html')
+                @@include('button/index.html',{
+                    "text":"LEARN MORE"
+                })
             </div>
         </section> 
         <section class="brands container">
             <h2 class="hidden">Brands</h2>
             <ul class="brands-outline">
-                <li><img src="../images/brands/brands1.png" alt="" width="193" height="60" class="brand"></li>
-                <li><img src="../images/brands/brands2.png" alt="" width="179" height="61" class="brand"></li>
-                <li><img src="../images/brands/brands3.png" alt="" width="216" height="46" class="brand"></li>
-                <li><img src="../images/brands/brands4.png" alt="" width="211" height="40" class="brand"></li>
+                <li><img src="../../static/images/brands/brands1.png" alt="" width="193" height="60" class="brand"></li>
+                <li><img src="../../static/images/brands/brands2.png" alt="" width="179" height="61" class="brand"></li>
+                <li><img src="../../static/images/brands/brands3.png" alt="" width="216" height="46" class="brand"></li>
+                <li><img src="../../static/images/brands/brands4.png" alt="" width="211" height="40" class="brand"></li>
             </ul>
         </section>
         <section class="contacts container">
@@ -104,7 +110,9 @@
                 <h2 class="contacts-title">Design Life Kids</h2>
                 <h3 class="about-undertitle">About Us</h3>
                 <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <a href="#" class="button">BUY NOW</a>
+                @@include('button/index.html',{
+                    "text":"BUY NOW"
+                })
             </div>
             <div class="contacts-second">
                 <h2 class="contacts-title">Contacts</h2>
@@ -114,41 +122,7 @@
         </section>
     </main>
     @@include('footer/index.html')
-    <div class="popup-overlay"></div>
-	<div class="popup-form">
-        <h1 class="hidden">Modal Window</h1>
-        <button class="popup-close"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
-            </svg>
-            </button>
-        <form action="#" method="POST" class="contact-form">
-            <fieldset class="contact-wrapper">
-                <label for="contact-name">Name</label>
-                <input type="text" id="contact-name" placeholder="Ivan Ivanov">
-            </fieldset> 
-            <fieldset class="contact-line">
-                <div class="contact-wrapper contact-block">
-                    <label for="contact-phone">Phone</label>
-                    <input type="tel" id="contact-phone" class="contact-phone">    
-                </div>
-                <div class="contact-wrapper contact-block">
-                    <label for="contant-email">E-mail</label>
-                    <input type="email" id="contant-email" class="contant-email">
-                </div>
-            </fieldset>
-            <fieldset class="contact-wrapper">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="5" class="message"></textarea>
-            </fieldset>
-            <fieldset>
-                <div class="checkbox">
-                    <input class="input" type="checkbox" id="contant-cach">
-                <label for="contant-cach">By clicking on the button, you consent to the processing of your personal data</label>                                                    
-                </div>
-            </fieldset>
-            <button type="submit" class="button">Submit</button>
-        </form>
-    </div>
+    @@include('popup/index.html')
     <script src="scripts.js"></script>
 </body>
 </html>

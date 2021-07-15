@@ -141,46 +141,8 @@ h3 {
     top: 5px;
     left: 5px;
     background-repeat: no-repeat;
-    background-image: url("../images/check-mark.png");
+    background-image: url("../../static/images/check-mark.png");
     opacity: 0;
-}
-
-.input:checked + label:after {
-    opacity: 1;
-} 
-
-.input:checked + label::before {
-    background-color: #FFFFFF;
-}
-
-.input {
-    -webkit-appearance: none;
-        -moz-appearance: none;
-            appearance: none;
-}
-
-.fake-radio {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #C29974;
-    border-radius: 50%;
-    position: relative;
-}
-
-.fake-radio::before {
-    content: "";
-    position: absolute;
-    width: 13px;
-    height: 13px;
-    top: 15%;
-    left: 10%;
-    background-color: #C29974;
-    opacity: 0;
-    border-radius: 50%;
-}
-
-.radios:checked + .fake-radio::before {
-    opacity: 1;
 }
 
 .delivery {
@@ -287,6 +249,4 @@ h3 {
     text-transform: uppercase;
 }
 
-.special {
-    color: #C29974;
-}
+
