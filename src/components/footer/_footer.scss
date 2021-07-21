@@ -1,143 +1,136 @@
 /* FOOTER */
 
-footer {
+.footer {
   background-color:#434343;
   padding: 100px 110px;
   margin-top: 147px;
-}
 
-.footer-first {
-  justify-content: space-between;
-}
+  &__first {
+    justify-content: space-between;
+  }
 
-.footer-table {
+  &__column {
   max-width: 380px;
   width: 100%;
-}
+  }
 
-.footer-copyright {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  color: #FFFFFF;
-  margin-left: -50px;
-}
+  &__title {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 22px;
+    color: #AAAAAA;
+    margin: 0;
+    margin-bottom: 22px;
+    border-bottom: #666666;
+    border-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 23px;
+  }
 
-.link {
-  margin-bottom: 15px;
-}
+  &__link {
+    padding: 0;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
 
-.footer-title {
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 22px;
-  color: #AAAAAA;
-  margin: 0;
-  margin-bottom: 22px;
-  border-bottom: #666666;
-  border-width: 1px;
-  border-bottom-style: solid;
-  padding-bottom: 23px;
-}
+  &__search {
+    max-width: 380px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+  }
 
-.line {
-  margin-top: 23px;
-  margin-bottom: 28px;
-  max-width: 380px;
-  width: 100%;
-}
+  &__searching {
+    background: #666666;
+    max-width: 300px;
+    width: 100%;
+    padding: 9px 0 9px 15px;
+  
+    &:hover {
+      border: 1px solid #FFFDFD;
+    }
 
-.footer-search {
-  max-width: 380px;
-  width: 100%;
-  max-height: 40px;
-  height: 100%;
-}
+    &::placeholder {
+      color: #EBEBEB;
+      max-width: 41px;
+      width: 100%;
+      max-height: 22px;
+      width: 100%; 
+    }
+  } 
+  
+  &__network {
+    margin-right: 15px;
+  }
 
-.footer-searching {
-  background: #666666;
-  max-width: 300px;
-  width: 100%;
-  padding: 9px 0 9px 15px;
-}
+  &__networks {
+    margin-top: 35px;
+    margin-bottom: 116px;
+    display: flex;
+  }
 
-.footer-searching:hover {
-  border: 1px solid #FFFDFD;
-}
+  &__second {
+    padding-bottom: 23px;
+    border-top: #666666;
+    border-width: 1px;
+    border-top-style: solid;
+    padding-top: 23px;
+    justify-content: space-between;
+  }
 
-.footer-searching::placeholder {
-  color: #EBEBEB;
-  max-width: 41px;
-  width: 100%;
-  max-height: 22px;
-  width: 100%; 
-}
+  &__ratings {
+    display: flex;
+  }
 
-.social {
-  margin-top: 35px;
-  margin-bottom: 116px;
-}
+  &__rating {
+    padding: 0;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    margin-right: 3px;
+    cursor: pointer;
+  }
+  
+  &__rating:hover {
+    color:#C29974;
+  }
+  
+  &__stars {
+    -webkit-display: inline-flex;
+    -moz-display: inline-flex;    
+        display: inline-flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
+    margin-top: 0;
+  }
 
-.footer-social {
-  margin-right: 15px;
-}
+  &__star {
+    color: #FFFFFF;
+    margin-right: 3px;
+    cursor: pointer;
+  }
 
-.footer-second {
-  padding-bottom: 23px;
-  border-top: #666666;
-  border-width: 1px;
-  border-top-style: solid;
-  padding-top: 23px;
-  justify-content: space-between;
-}
+  &__star:hover,
+  &__star:hover ~ &__star {
+    color: #836E5B;
+  } 
+  
+  &__copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-left: -50px;
+  }
 
-.line-second {
-  margin-top: 28px;
-  margin-bottom: 23px;
-}
+  &__dl {
+    left: -155px;
+    position: relative;
+    color: #A2A2A2;
+    left: -80px;
+  }
 
-.footer-link,
-.footer-company_rating {
-  padding: 0;
-  color: #FFFFFF;
-}
-
-.footer-company_rating {
-  margin-bottom: 20px;
-}
-
-.rating-two {
-  -webkit-display: inline-flex;
-  -moz-display: inline-flex;    
-      display: inline-flex;
-  flex-direction: row-reverse;
-  list-style-type: none;
-  margin-top: 0;
-}
-
-.rating-one {
-  padding-top: 0;
-}
-
-.star {
-  color: #FFFFFF;
-  margin-right: 3px;
-  cursor: pointer;
-}
-
-.star:hover,
-.star:hover ~ .star {
-  color: #836E5B;
-}
-
-.dl {
-  left: -155px;
-  position: relative;
-  color: #A2A2A2;
-  left: -80px;
-}
-
-.dl:hover {
-  text-decoration-line: underline;
-  color: #FFFFFF;
+  &__dl:hover {
+    text-decoration-line: underline;
+    color: #FFFFFF;
+  }
 }

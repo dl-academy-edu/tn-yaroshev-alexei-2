@@ -11,13 +11,13 @@
 <body>
     @@include('header/index.html')
     <main>
-        <section class="service container">
-            <h1 class="title">Category Products</h1>
+        <section class="container">
+            <h1 class="catalog__title">Category Products</h1>
                 <ul class="outline breadcrumbs">
-                    <li><a href="#" class="pointer-home">Home</a></li>
-                    <li><p class="pointer-next">Catalog</p></li>
+                    <li><a href="#" class="pointer__home">Home</a></li>
+                    <li><p class="pointer__next">Catalog</p></li>
                 </ul>
-                <ul class="outline category">
+                <ul class="catalog__category outline">
                     @@include('service/index.html',{
                         "class-li":"category-first",
                         "href":"#",
@@ -38,6 +38,7 @@
                     })
                     @@include('service/index.html',{
                         "class-li":"category-fourth",
+                        "order":"order",
                         "href":"#",
                         "class-p":"service-fourth",
                         "text":"ACCESSORIES"
@@ -55,15 +56,15 @@
                         "text":"APPAREL ADULTS"
                     })
                 </ul>
-            <div class="under-service">
-                <h2 class="under-title">Product Description</h2>
-                <p class="service-text">
+            <div class="catalog__description">
+                <h2 class="catalog__description-title">Product Description</h2>
+                <p class="catalog__text">
                     Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.
                 </p>    
-                <p class="service-text">
+                <p class="catalog__text">
                     A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.
                 </p>
-                <p class="service-text">
+                <p class="catalog__text">
                     The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.
                 </p>
             </div>

@@ -5,37 +5,25 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-}
 
-.header-logo {
-  max-width: 100px;
-}
+  &__logo {
+    max-width: 100px;
+  }
 
-.header-nav {
-  margin: 0 auto 0 60px;
-}
+  &__nav {
+    margin: 0 auto 0 60px;
+  }
 
-.header-item {
-  margin-right: 20px;
-}
+  &__item {
+    margin-right: 20px;
+  }
 
-.header-search {
-  margin-right: 23px;
-}
+  &__search {
+    margin-right: 23px;
+  }
 
-.pointer-home {
-  font-style: italic;
-}
-
-.pointer-home::after {
-  content: '>'; 
-  margin-left: 20px; 
-  margin-right: 20px; 
-  color: #7f7f7f; 
-}
-
-.pointer-next {
-  opacity: 50%;
-  font-style: italic;
-  margin: 0;
+  &__list {
+    align-items: center;
+    display: flex;
+  }
 }

@@ -1,90 +1,20 @@
-.outline {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.button {
-    background: #000000;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    max-width: 161px;
-    padding: 9px;
-    border: none;
-    text-transform: uppercase;
-}
-
-.button:hover {
-    background: #C29974;
-}
-
-.button:active {
-    background: #CFAF91;
-}
-
-.button:disabled {
-   background: #C1C1C1;
-}
-
 /* BLOG */
 
-.title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    line-height: 110%;
-    color: #1E0606;
-    margin: 0;
-    margin-bottom: 15px;
-}
+.blog {
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        line-height: 110%;
+        color: #1E0606;
+        margin: 0;
+        margin-bottom: 15px;
+    }
 
-.breadcrumbs {
-    margin-bottom: 50px;
-    padding: 0; 
-}
-
-.arrow {
-    margin: 0 20px;
-    max-width: 8px;
-    max-height: 12px;
-    width: 100%;
-    height: 100%;
-}
-
-.blog-articles  {
-    list-style-type: none;
-    padding: 0;
-    flex-flow: row wrap;
-}
-
-.pagination {
-    justify-content: space-between;
-}
-
-.arrow {
-    max-width: 13px;
-    max-height: 26px;
-    box-sizing: border-box;
-}
-
-.pages {
-    list-style-type: none;
-    justify-content: space-around;
-}
-
-.page {
-    margin-right: 64px;
-    max-width: 10px;
-    max-height: 20px;
-    width: 100%;
-    height: 100%;
-    color: #1E0606;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: bold;
-    size: 16px;
-    text-transform: uppercase;
+    &__articles  {
+        list-style-type: none;
+        padding: 0;
+        flex-flow: row wrap;
+    }
 }
 
 .special {

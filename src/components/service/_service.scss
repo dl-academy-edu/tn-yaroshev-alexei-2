@@ -1,21 +1,53 @@
+.service-first:hover,
+.service-second:hover,
+.service-third:hover,
+.service-fourth:hover,
+.service-fifth:hover,
+.service-sixth:hover {
+    text-decoration-line: underline;
+}
+
+.block {
+  max-width: 244px;
+  text-transform: uppercase;
+  max-height: 244px;
+  height: 100%;
+  color: #FFFFFF;
+  margin: 0;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+
+
+.order:nth-child(4n) {
+  margin-left: 200px;
+  margin-right: 35px;
+}
+
 .group {
-    max-width: 280px;
-    width: 100%;
-    max-height: 270px;
-    margin-right: 35px;
-  }
+  max-width: 280px;
+  width: 100%;
+  max-height: 270px;
+  margin-right: 35px;
+  margin-bottom: 20px;
+}
   
-  .service-first {
-    background-image: url("../../static/images/service/service-1.png");
-    background-color: #DBE4DB;
-    padding: 57px;
-    max-height: 170px; 
-  }
+.service-first {
+  background-image: url("../../static/images/service/service-1.png");
+  background-color: #DBE4DB;
+  padding: 57px;
+  max-height: 170px; 
+}
   
   .category-first {
     background-color: #DBE4DB;
     padding: 48px 18px;
-  }
+    margin-top: 50px;
+}
   
   .service-second {
     background-image: url("../../static/images/service/service-2.png");
@@ -27,8 +59,8 @@
   .category-second {
     background-color: #EADDD3;
     padding: 20px 18px;
-  }
-  
+    margin-top: 50px;
+}
   .service-third {
     background-image: url("../../static/images/service/service-3.png");
     background-color: #F8F2DA;
@@ -41,7 +73,8 @@
   .category-third {
     height: 100%;
     background-color: #F8F2DA;
-  }
+    margin-top: 50px;
+}
   
   .service-fourth {
     background-image: url("../../static/images/service/service-4.png");
@@ -57,4 +90,35 @@
     padding: 10px 22px;
     margin: 0;
   }
+
+  .service-fifth {
+    background-image: url("../../static/images/service/service-5.png");
+    background-color: #F3D0DB;
+    width: 100%;
+    padding: 108px 89px;
+    max-height: 270px;
+}
+
+.category-fifth {
+  height: 100%;
+  background-color: #F3D0DB;
+  padding: 10px 22px;
+}
+
+.service-sixth {
+  background-image: url("../../static/images/service/service-6.png");
+  background-color: #E5EAF8;
+  width: 100%;
+  padding-top: 90px;
+  padding-left: 70px;
+  padding-right: 210px;
+  padding-bottom: 80px;
+  max-height: 270px;
+}
+
+.category-sixth {
+  height: 100%;
+  background-color: #E5EAF8;
+  padding: 30px 0px;
+}
   
