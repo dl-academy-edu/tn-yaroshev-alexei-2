@@ -1,5 +1,13 @@
 /* BANNER */
 
+@mixin color($color: #1E0606) {
+  color: $color;
+}
+
+@mixin background($background: #FFFFFF) {
+    background: $background;
+}
+
 .banner {
   &__main {
     max-width: 1180px;
@@ -19,16 +27,16 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     line-height: 110%;
-    color: #1E0606;
+    @include color;
     margin: 0;
   }
 
-  &__manufacturer {
+  &__subtitle {
     font-family: 'Crimson Text', serif;
     font-size: 20px;
     font-style: italic;
     line-height: 25px;
-    color: #1E0606;
+    @include color;
   }
 
   &__logo {
@@ -37,7 +45,7 @@
     position: relative;
   }
 
-  &__basement {
+  &__footer {
     background: #C29974;
     max-width: 1180px;
     width: 100%;
@@ -46,7 +54,7 @@
     padding: 11px 364px;
   }
 
-  &__basement-text {
+  &__footer-text {
     margin: 0;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
@@ -58,7 +66,7 @@
   }
 }
 
-.slides {
+.slider {
   padding: 17px 44px 0 28px;
 
   &__number {
@@ -70,7 +78,7 @@
     margin: 0;
   }
 
-  &__slide {
+  &__pagination {
     max-width: 31px;
     max-height: 11px;
   }
@@ -134,18 +142,7 @@
     margin-right: 5px;
   }
 
-  &__basement-text {
-    font-size: 16px;
-    line-height: 22px;
-    max-width: 580px;
-    width: 100%;
-    margin-top: 0;
-    max-height: 44px;
-    height: 100%;
-    color: #1E0606;
-    font-family: 'Open Sans', sans-serif;   
-    text-align: start;
-  }
+  
 }
 
 .category {
@@ -160,7 +157,7 @@
 .about {
   margin-top: 70px;
 
-  &__logo {
+  &__picture {
     max-width: 480px;
     max-height: 559px;
     margin-right: 120px;
@@ -173,25 +170,10 @@
     margin-bottom: 17px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;  
-    color: #1E0606;
+    @include color;
   }
 
-  &__chosen {
-    font-family: 'Crimson Text', serif;
-    font-style: italic;
-    font-size: 26px;
-    font-weight: bold;
-    line-height: 32px;
-    margin-bottom: 22px;
-    background-color: rgba(112, 187, 220, 0.2);
-    padding: 11px 180px 11px 60px;
-    max-width: 326px;
-    max-height: 55px;
-    left: -60px;
-    position: relative;
-  }
-
-  &__text {
+  &__item {
     font-family: 'Crimson Text', serif;
     font-size: 26px;
     line-height: 32px;
@@ -199,15 +181,34 @@
     font-weight: normal;
     margin-bottom: 22px;
   }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
 }
 
+.active {
+  font-family: 'Crimson Text', serif;
+      font-style: italic;
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 32px;
+      margin-bottom: 22px;
+      background-color: rgba(112, 187, 220, 0.2);
+      padding: 11px 180px 11px 60px;
+      max-width: 326px;
+      max-height: 55px;
+      left: -60px;
+      position: relative;
+}
 
 /* BRANDS */
 
 .brands {
   margin: 90px 110px;
 
-  &__outline {
+  &__list {
     list-style-type: none;
     margin-top: 90px;
     margin-bottom: 90px;
@@ -225,7 +226,7 @@
 .contacts {
   display: flex;
 
-  &__first {
+  &__about {
     background-color: #E1F0F7;
     margin-right: 57px;
     padding-left: 30px;
@@ -236,7 +237,7 @@
     padding-bottom: 35px;
   }
 
-  &__second {
+  &__contacts {
     background-color: #E1F0F7;
     padding-left: 30px;
     max-width: 543px;
@@ -251,7 +252,7 @@
     font-size: 38px;
     position: relative;
     text-transform: uppercase;
-    color: #1E0606;
+    @include color;
     margin-top: 0;
     top: -10px;
     margin-bottom: 10px;
@@ -264,7 +265,7 @@
 .contact-phone,
 .contant-email,
 .message {
-  background: #FFFFFF;
+  @include background;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
 }
@@ -305,7 +306,7 @@
   padding: 12px 20px;
   font-size: 16px;
   line-height: 25px;
-  background: #FFFFFF;
+  @include background;
 }
 .contact-form textarea {
   height: auto;

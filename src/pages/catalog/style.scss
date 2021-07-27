@@ -1,3 +1,5 @@
+%zero {padding: 0;}
+
 /* SERVICE */
 
 .catalog {
@@ -12,15 +14,15 @@
 
     &__category {
         list-style-type: none;
-        padding: 0;
+        @extend %zero;
         flex-wrap: wrap;
     }
+}
 
-    &__description {
-        margin-left: 230px;
-    }
+.description {
+    margin-left: 230px;
 
-    &__description-title {
+    &__title {
         margin-top: 55px;
         font-size: 38px;
         line-height: 46px;
@@ -39,6 +41,7 @@
         color: #1E0606;
         font-family: 'Open Sans', sans-serif;
         margin-bottom: 15px;
-        padding: 0;
+        @extend %zero;
     }
 }
+

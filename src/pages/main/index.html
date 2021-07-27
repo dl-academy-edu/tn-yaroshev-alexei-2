@@ -13,34 +13,34 @@
     <main>
         <section class="banner container">
             <div class="banner__main">
-                <div class="slides">
-                    <p class="slides__number">01</p>
+                <div class="slider">
+                    <p class="slider__number">01</p>
                     <ul class="outline">
-                        <li class="slides__slide">
+                        <li class="slider__pagination">
                             <button class="special"></button>
                         </li>
-                        <li class="slides__slide">
-                            <button class="slides__button"></button>
+                        <li class="slider__pagination">
+                            <button class="slider__button"></button>
                         </li>
-                        <li class="slides__slide">
-                            <button class="slides__button"></button>
+                        <li class="slider__pagination">
+                            <button class="slider__button"></button>
                         </li>
-                        <li class="slides__slide">
-                            <button class="slides__button"></button>
+                        <li class="slider__pagination">
+                            <button class="slider__button"></button>
                         </li> 
                     </ul>
                 </div>
                 <div class="banner__text">
                     <h1 class="banner__title">THE OOH NOO COLLECTION</h1>
-                    <p class="banner__manufacturer">Designed in Slovenia</p>
+                    <p class="banner__subtitle">Designed in Slovenia</p>
                     <a href="#" class="button banner-js">EXPLORE NOW</a>
                 </div>
                 <div>
                     <img src="../../static/images/banner1.png" alt="" width="635" height="461" class="banner__logo">
                 </div>
             </div>    
-            <div class="banner__basement">
-                <p class="banner__basement-text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+            <div class="banner__footer">
+                <p class="banner__footer-text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
             </div>    
         </section>  
         <section class="service container">
@@ -49,25 +49,25 @@
                 @@include('service/index.html',{
                     "class-li":"category-first",
                     "href":"#",
-                    "class-p":"service-first",
+                    "class-number":"service-first",
                     "text":"APPAREL KIDS"
                 })
                 @@include('service/index.html',{
                     "class-li":"category-second",
                     "href":"#",
-                    "class-p":"service-second",
+                    "class-number":"service-second",
                     "text":"HOLIDAY SHOP"
                 })
                 @@include('service/index.html',{
                     "class-li":"category-third",
                     "href":"#",
-                    "class-p":"service-third",
+                    "class-number":"service-third",
                     "text":"TOYS"
                 })
                 @@include('service/index.html',{
                     "class-li":"category-fourth",
                     "href":"#",
-                    "class-p":"service-fourth",
+                    "class-number":"service-fourth",
                     "text":"ACCESSORIES"
                 })
             </ul>
@@ -76,18 +76,20 @@
                     <li><img src="../../static/images/arrow-left.png" alt="" width="13" height="26" class="service__arrow"></li>
                     <li><img src="../../static/images/arrow-right.png" alt="" width="13" height="26" class="service__arrow"></li>
                 </ul>
-                <p class="service__basement-text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+                <p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
             </div>
         </section> 
         <section class="about container">
             <div>
-                <img src="../../static/images/about1.jpg" alt="" width="480" height="559" class="about__logo">
+                <img src="../../static/images/about1.jpg" alt="" width="480" height="559" class="about__picture">
             </div>
             <div>
                 <h2 class="about__title">DELIVERY</h2>
-                <h3 class="about__chosen">Delivery</h3>
-                <h3 class="about__text">Guarantee</h3>
-                <h3 class="about__text">Credit</h3>
+                <ul class="about__list">
+                    <li class="about__item active">Delivery</li>
+                    <li class="about__item">Guarantee</li>
+                    <li class="about__item">Credit</li>
+                </ul>
                 <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply</p>
                 <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!
                 </p>
@@ -98,7 +100,7 @@
         </section> 
         <section class="brands container">
             <h2 class="hidden">Brands</h2>
-            <ul class="brands__outline">
+            <ul class="brands__list">
                 <li><img src="../../static/images/brands/brands1.png" alt="" width="193" height="60" class="brand"></li>
                 <li><img src="../../static/images/brands/brands2.png" alt="" width="179" height="61" class="brand"></li>
                 <li><img src="../../static/images/brands/brands3.png" alt="" width="216" height="46" class="brand"></li>
@@ -106,13 +108,13 @@
             </ul>
         </section>
         <section class="contacts container">
-            <div class="contacts__first">
+            <div class="contacts__about">
                 <h2 class="contacts__title">Design Life Kids</h2>
                 <h3>About Us</h3>
                 <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                 <a href="#" class="button">BUY NOW</a>
             </div>
-            <div class="contacts__second">
+            <div class="contacts__contacts">
                 <h2 class="contacts__title">Contacts</h2>
                 <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9d9c1686b00722d366841caabfd27a7cfcc272cc52922b0f55b56580d00e0d13&amp;source=constructor" width="500" height="240" frameborder="0"></iframe>

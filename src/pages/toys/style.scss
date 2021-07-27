@@ -1,3 +1,5 @@
+%zero {padding: 0;}
+
 h2 {
     margin: 0;
     max-width: 68px;
@@ -15,8 +17,8 @@ h3 {
     
 }
 
-.picture:hover::before,
-.picture:active::before {
+.product:hover::before,
+.product:active::before {
     content: 'Learn more';
     text-transform: uppercase;
     color: #1E0606;
@@ -51,7 +53,7 @@ h3 {
 .breadcrumbs {
     display: flex;
     margin-bottom: 50px;
-    padding: 0; 
+    @extend %zero;
 }
 
 .sidebar {
@@ -66,7 +68,7 @@ h3 {
 
 .checkbox {
     list-style-type: none;
-    padding: 0;
+    @extend %zero;
     align-items: center;
 }
 
@@ -111,7 +113,7 @@ h3 {
 
 .radio {
     list-style-type: none;
-    padding: 0;
+    @extend %zero;
 }
 
 .amount {
@@ -122,13 +124,13 @@ h3 {
 
 .prices {
     list-style-type: none;
-    padding: 0;
+    @extend %zero;
 }
 
 .range {
     width: 80px;
     height: 35px;
-    padding: 0;
+    @extend %zero;
     background: #FFFFFF;
     border: none;
 }
@@ -153,11 +155,11 @@ h3 {
 /* PRODUCTS */
 
 .row {
-    padding: 0;
+    @extend %zero;
     list-style-type: none;
 }
 
-.description {
+.specification {
     font-size: 14px;
     line-height: 19px;
     font-family: 'Open Sans', sans-serif;

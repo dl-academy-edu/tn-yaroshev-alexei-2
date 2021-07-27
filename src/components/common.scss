@@ -1,12 +1,15 @@
 
+$space: #1E0606;
+%zero {padding: 0;}
+
 .button,
 .banner__basement-text,
 .block,
 .group,
-.description, 
+.specification, 
 .price,
-.picture:hover::before,
-.picture:active::before,
+.product:hover::before,
+.product:active::before,
 .breadcrumbs,
 .contact-title,
 .contact-title {
@@ -48,11 +51,11 @@ img,
 .pagination,
 .pages,
 .header,
-.footer__first,
+.footer__top,
 .footer__search
 .footer__networks,
 .footer__search,
-.footer__second,
+.footer__bottom,
 .footer__link,
 .footer-company_rating  {
     -webkit-display: flex;
@@ -61,7 +64,7 @@ img,
 }
 
 .fake-radio,
-.row-picture {
+.row-product {
     -webkit-display: inline-block;
         -moz-display: inline-block;    
             display: inline-block;
@@ -85,26 +88,30 @@ h3 {
 .container {
     max-width: 1220px;
     width: 100%;
-    padding: 0;
+    @extend %zero;
     margin: 0 auto;
 }
 
+@mixin box-sizing($box-sizing: border-box) {
+    box-sizing:$box-sizing
+}
+
 * {
-    box-sizing: border-box;
+    @include box-sizing;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     margin: 0;
-    box-sizing: border-box;
+    @include box-sizing;
     font-size: 16px;
     line-height: 21px;
 }
 
 a {
     text-decoration: none;
-    color: #1E0606;
+    color: $space;
 }
 
 a:hover {
@@ -131,19 +138,24 @@ img {
             appearance: none;
 }
 
-.pointer {
-    &__home {
+.breadcrumbs {
+    margin-bottom: 50px;
+    
+    &__home,
+    &__next {
         font-style: italic;
+        margin-bottom: 50px;
     }
 
-    &__home::after {
+    &__home::after,
+    &__next::after {
         content: '>'; 
         margin-left: 20px; 
         margin-right: 20px; 
         color: #7f7f7f; 
     }
 
-    &__next {
+    &__active {
         opacity: 50%;
         font-style: italic;
         margin: 0;
@@ -152,7 +164,7 @@ img {
 
 .outline {
     list-style-type: none;
-    padding: 0;
+    @extend %zero;
     margin: 0;
 }
 
@@ -171,7 +183,7 @@ img {
     max-height: 20px;
     width: 100%;
     height: 100%;
-    color: #1E0606;
+    color: $space;
     font-size: 16px;
     line-height: 20px;
     font-weight: bold;

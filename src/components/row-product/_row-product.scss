@@ -1,4 +1,4 @@
-.description {
+.specification {
     font-size: 14px;
     line-height: 19px;
     font-family: 'Open Sans', sans-serif;
@@ -17,8 +17,8 @@
     margin-bottom: 78px;
 }
 
-.picture:hover::before,
-.picture:active::before {
+.product:active::before,
+.product:hover::before {
     content: 'Learn more';
     text-transform: uppercase;
     color: #1E0606;
@@ -37,10 +37,10 @@
     margin: 70px;
 }
 
-.picture:hover::before {
+.product:hover::before {
     opacity: 90%;
 }
 
-.picture:active::before {    
+.product:active::before {
     opacity: 0.67;
 }

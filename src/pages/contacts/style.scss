@@ -1,5 +1,15 @@
 /* CONTACTS */
 
+@mixin display($display:flex) {
+    display: $display;
+}
+
+@mixin background($background: #FFFFFF) {
+    background: $background;
+}
+
+
+
 .contacts {
     &__title {
         font-family: 'Montserrat', sans-serif;
@@ -10,8 +20,8 @@
         margin-bottom: 15px;
     }
 
-    &__window {
-        display: flex;
+    &__main {
+        @include display;
         margin-top: 50px;
     }
 
@@ -43,7 +53,7 @@
         padding: 12px 20px;
         font-size: 16px;
         line-height: 25px;
-        background: #FFFFFF;
+        @include background;
     }
 
     &__form textarea {
@@ -53,7 +63,7 @@
 
     &__wrapper {
         flex-direction: column;
-        display: flex;
+        @include display;
     }
 
     &__block {
@@ -63,10 +73,10 @@
 
     &__line {
         justify-content: space-between;
-        display: flex;
+        @include display;
     }
 
-    &__texts {
+    &__description {
         margin-left: 120px;
         margin-bottom: 20px;
         max-width: 380px;
@@ -83,7 +93,7 @@
     &__phone,
     &__email,
     &__message {
-        background: #FFFFFF;
+        @include background;
         border: 1px solid rgba(0, 0, 0, 0.2);
         box-sizing: border-box;
     }
@@ -138,5 +148,5 @@
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: #C29974;
-    background-color: #FFFFFF;
+    @include background;
 }

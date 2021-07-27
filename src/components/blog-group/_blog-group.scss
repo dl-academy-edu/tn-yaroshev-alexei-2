@@ -1,3 +1,5 @@
+$space: #1E0606;
+
 .blog-group {
     margin-right: 20px;
     margin-top: 20px;
@@ -24,7 +26,7 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;
-    color: #1E0606;
+    color: $space;
 }
 
 .name:hover {
@@ -36,7 +38,7 @@
     max-width: 680px;
     width: 100%;
     height: 100%;
-    color: #1E0606;
+    color: $space;
     margin-bottom: 15px;
     padding: 0;
 }
