@@ -1,4 +1,4 @@
-$light: #FFFFFF;
+@import "../additions";
 
 /* FOOTER */
 
@@ -47,6 +47,7 @@ $light: #FFFFFF;
     max-width: 300px;
     width: 100%;
     padding: 9px 0 9px 15px;
+    transition: .4s;
   
     &:hover {
       border: 1px solid #FFFDFD;
@@ -100,10 +101,12 @@ $light: #FFFFFF;
     margin-bottom: 15px;
     margin-right: 3px;
     cursor: pointer;
+    transition: .4s .4s;
   }
   
   &__list:hover {
     color:#C29974;
+    transform: translate(20px, 0px);
   }
 
   &__stars{
@@ -119,11 +122,13 @@ $light: #FFFFFF;
     color: $light;
     margin-right: 3px;
     cursor: pointer;
+    transition: .4s;
   }
 
   &__item:hover,
   &__item:hover ~ &__item {
     color: #836E5B;
+    transform: scale(2, 2);
   } 
 }
 

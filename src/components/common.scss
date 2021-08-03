@@ -1,6 +1,6 @@
 
-$space: #1E0606;
-%zero {padding: 0;}
+@import "./additions";
+
 
 .button,
 .banner__basement-text,
@@ -64,7 +64,7 @@ img,
 }
 
 .fake-radio,
-.row-product {
+.catalog-product {
     -webkit-display: inline-block;
         -moz-display: inline-block;    
             display: inline-block;
@@ -88,12 +88,8 @@ h3 {
 .container {
     max-width: 1220px;
     width: 100%;
-    @extend %zero;
+    padding: 0;
     margin: 0 auto;
-}
-
-@mixin box-sizing($box-sizing: border-box) {
-    box-sizing:$box-sizing
 }
 
 * {
@@ -112,6 +108,7 @@ body {
 a {
     text-decoration: none;
     color: $space;
+    transition: .4s;
 }
 
 a:hover {
@@ -141,14 +138,12 @@ img {
 .breadcrumbs {
     margin-bottom: 50px;
     
-    &__home,
-    &__next {
+    &__item {
         font-style: italic;
         margin-bottom: 50px;
     }
 
-    &__home::after,
-    &__next::after {
+    &__item::after {
         content: '>'; 
         margin-left: 20px; 
         margin-right: 20px; 
@@ -164,7 +159,7 @@ img {
 
 .outline {
     list-style-type: none;
-    @extend %zero;
+    padding: 0;
     margin: 0;
 }
 

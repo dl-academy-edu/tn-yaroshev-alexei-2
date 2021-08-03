@@ -1,14 +1,6 @@
+@import "../../components/additions";
+
 /* CONTACTS */
-
-@mixin display($display:flex) {
-    display: $display;
-}
-
-@mixin background($background: #FFFFFF) {
-    background: $background;
-}
-
-
 
 .contacts {
     &__title {
@@ -96,6 +88,7 @@
         @include background;
         border: 1px solid rgba(0, 0, 0, 0.2);
         box-sizing: border-box;
+        transform: rotate(180deg);
     }
 
     &__message:hover,

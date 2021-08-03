@@ -1,12 +1,6 @@
+@import "../../components/additions";
+
 /* BANNER */
-
-@mixin color($color: #1E0606) {
-  color: $color;
-}
-
-@mixin background($background: #FFFFFF) {
-    background: $background;
-}
 
 .banner {
   &__main {
@@ -58,7 +52,7 @@
     margin: 0;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
-    color: #FFFFFF;
+    color: $light;
     font-size: 12px;
     line-height: 16px;
     max-width: 500px;

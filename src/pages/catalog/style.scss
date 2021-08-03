@@ -1,4 +1,4 @@
-%zero {padding: 0;}
+@import "../../components/additions";
 
 /* SERVICE */
 
@@ -14,7 +14,7 @@
 
     &__category {
         list-style-type: none;
-        @extend %zero;
+        padding: 0;
         flex-wrap: wrap;
     }
 }
@@ -41,7 +41,7 @@
         color: #1E0606;
         font-family: 'Open Sans', sans-serif;
         margin-bottom: 15px;
-        @extend %zero;
+        padding: 0;
     }
 }
 

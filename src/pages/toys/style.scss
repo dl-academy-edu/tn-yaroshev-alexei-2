@@ -1,4 +1,4 @@
-%zero {padding: 0;}
+@import "../../components/additions";
 
 h2 {
     margin: 0;
@@ -13,8 +13,7 @@ h3 {
 .color,
 .delivery,
 .amount {
-    margin-top: 42px;
-    
+    margin-top: 42px; 
 }
 
 .product:hover::before,
@@ -53,7 +52,7 @@ h3 {
 .breadcrumbs {
     display: flex;
     margin-bottom: 50px;
-    @extend %zero;
+    padding: 0;
 }
 
 .sidebar {
@@ -68,7 +67,7 @@ h3 {
 
 .checkbox {
     list-style-type: none;
-    @extend %zero;
+    padding: 0;
     align-items: center;
 }
 
@@ -113,7 +112,7 @@ h3 {
 
 .radio {
     list-style-type: none;
-    @extend %zero;
+    padding: 0;
 }
 
 .amount {
@@ -124,14 +123,14 @@ h3 {
 
 .prices {
     list-style-type: none;
-    @extend %zero;
+    padding: 0;
 }
 
 .range {
     width: 80px;
     height: 35px;
-    @extend %zero;
-    background: #FFFFFF;
+    padding: 0;
+    @include background;
     border: none;
 }
 
@@ -154,8 +153,8 @@ h3 {
 
 /* PRODUCTS */
 
-.row {
-    @extend %zero;
+.row-products {
+    padding: 0;
     list-style-type: none;
 }
 

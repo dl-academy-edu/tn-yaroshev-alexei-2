@@ -17,6 +17,10 @@
     margin-bottom: 78px;
 }
 
+.product {
+    transform: scale(0.5, 0.5);
+}
+
 .product:active::before,
 .product:hover::before {
     content: 'Learn more';
