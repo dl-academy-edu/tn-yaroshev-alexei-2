@@ -1,15 +1,7 @@
 /* BLOG */
 
 .blog {
-    &__title {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 40px;
-        line-height: 110%;
-        color: #1E0606;
-        margin: 0;
-        margin-bottom: 15px;
-    }
-
+    
     &__articles  {
         list-style-type: none;
         padding: 0;
@@ -19,4 +11,10 @@
 
 .special {
     color: #C29974;
+}
+
+.arrow:hover  {
+    stroke:#C29974;
+    transition: .4s;
+    cursor: pointer;
 }

@@ -127,10 +127,14 @@
 
   &__item:hover,
   &__item:hover ~ &__item {
-    color: #836E5B;
+    fill:#C29974;
+    color: #C29974;
+    stroke: #C29974;
+
     transform: scale(2, 2);
   } 
 }
+
 
 .social {
   margin-top: 35px;

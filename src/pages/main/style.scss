@@ -46,18 +46,21 @@
     max-height: 39px;
     height: 100%;
     padding: 11px 364px;
-  }
-
-  &__footer-text {
     margin: 0;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     color: $light;
     font-size: 12px;
-    line-height: 16px;
-    max-width: 500px;
+    line-height: 0px;
     width: 100%;
+    
   }
+}
+
+.banner-logo {
+  margin-right: 99px;
+  top: -89px;
+  position: relative;
 }
 
 .slider {
@@ -126,17 +129,31 @@
     display: flex;
   }
 
-  &__arrow {
-    background-color: rgba(112, 187, 220, 0.2);
-    max-width: 37px;
-    max-height: 37px;
-    height: 100%;
-    width: 100%;
-    padding: 5px 12px;
-    margin-right: 5px;
-  }
+}
 
-  
+.wow {
+  background-color: rgba(112, 187, 220, 0.2);
+  width: 37px;
+  height: 37px;
+  max-width: 37px;
+  max-height: 37px;
+  height: 100%;
+  width: 100%;
+  padding: 5px 12px;
+  margin-right: 8px;
+}
+
+.arrow {
+  stroke:#000000;
+  height: 100%;
+  width: 100%;
+  padding: 5px 12px;
+}
+
+.arrow:hover  {
+  stroke:#C29974;
+  transition: .4s;
+  cursor: pointer;
 }
 
 .category {
@@ -201,13 +218,7 @@
 
 .brands {
   margin: 90px 110px;
-
-  &__list {
-    list-style-type: none;
-    margin-top: 90px;
-    margin-bottom: 90px;
-    display: flex;
-  }
+  display: flex;
 }
 
 .brand {

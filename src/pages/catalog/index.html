@@ -7,52 +7,53 @@
     <link rel="stylesheet" href="/common.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head> 
 <body>
     @@include('header/index.html')
     <main>
         <section class="container">
-            <h1 class="catalog__title">Category Products</h1>
+            <h1 class="title">Category Products</h1>
                 <ul class="outline breadcrumbs">
-                    <li><a href="#" class="breadcrumbs__item">Home</a></li>
-                    <li><p class="breadcrumbs__active">Catalog</p></li>
+                    <li><a href="#" class="breadcrumbs_item">Home</a></li>
+                    <li><p class="breadcrumbs_active">Catalog</p></li>
                 </ul>
                 <ul class="catalog__category outline">
                     @@include('service/index.html',{
-                        "class-li":"category__first",
+                        "class-li":"category_first",
                         "href":"#",
-                        "class-number":"service__first",
+                        "class-number":"service_first",
                         "text":"APPAREL KIDS"
                     })
                     @@include('service/index.html',{
-                        "class-li":"category__second",
+                        "class-li":"category_second",
                         "href":"#",
-                        "class-number":"service__second",
+                        "class-number":"service_second",
                         "text":"HOLIDAY SHOP"
                     })
                     @@include('service/index.html',{
-                        "class-li":"category__third",
+                        "class-li":"category_third",
                         "href":"#",
-                        "class-number":"service__third",
+                        "class-number":"service_third",
                         "text":"TOYS"
                     })
                     @@include('service/index.html',{
-                        "class-li":"category__fourth",
+                        "class-li":"category_fourth",
                         "order":"order",
                         "href":"#",
-                        "class-number":"service__fourth",
+                        "class-number":"service_fourth",
                         "text":"ACCESSORIES"
                     })
                     @@include('service/index.html',{
-                        "class-li":"category__fifth",
+                        "class-li":"category_fifth",
                         "href":"#",
-                        "class-number":"service__fifth",
+                        "class-number":"service_fifth",
                         "text":"SALE"
                     })
                     @@include('service/index.html',{
-                        "class-li":"category__sixth",
+                        "class-li":"category_sixth",
                         "href":"#",
-                        "class-number":"service__sixth",
+                        "class-number":"service_sixth",
                         "text":"APPAREL ADULTS"
                     })
                 </ul>

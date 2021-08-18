@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   font-size: 26px;
   line-height: 32px;
+  transition: .4s;
 }
 
 .order:nth-child(4n) {
@@ -26,57 +27,49 @@
 }
   
 .service {
-  &__first,
-  &__second,
-  &__third,
-  &__fourth,
-  &__fifth,
-  &__sixth {
-    transition: .4s;
-}
 
-  &__first:hover,
-  &__second:hover,
-  &__third:hover,
-  &__fourth:hover,
-  &__fifth:hover,
-  &__sixth:hover {
+  &_first:hover,
+  &_second:hover,
+  &_third:hover,
+  &_fourth:hover,
+  &_fifth:hover,
+  &_sixth:hover {
     text-decoration-line: underline;
 }
 
-  &__first {
+  &_first {
     background-image: url("../../static/images/service/service-1.png");
     background-color: #DBE4DB;
     padding: 57px;
     max-height: 170px; 
   }
 
-  &__second {
+  &_second {
     background-image: url("../../static/images/service/service-2.png");
     background-color: #EADDD3;
     padding: 120px 26px;
     max-height: 244px;
   }
 
-  &__third {
+  &_third {
     background-image: url("../../static/images/service/service-3.png");
     background-color: #F8F2DA;
     padding: 135px 100px;
   }
 
-  &__fourth {
+  &_fourth {
     background-image: url("../../static/images/service/service-4.png");
     background-color: #D5D4E1;
     padding: 110px 40px;
   }
 
-  &__fifth {
+  &_fifth {
     background-image: url("../../static/images/service/service-5.png");
     background-color: #F3D0DB;
     padding: 108px 89px;
   }
 
-  &__sixth {
+  &_sixth {
     background-image: url("../../static/images/service/service-6.png");
     background-color: #E5EAF8;
     padding: 90px 100px;
@@ -85,32 +78,32 @@
 }
 
 .category {
-  &__first {
+  &_first {
     background-color: #DBE4DB;
     padding: 48px 18px;
   }
 
-  &__second {
+  &_second {
     background-color: #EADDD3;
     padding: 20px 18px;
   }
 
-  &__third {
+  &_third {
     background-color: #F8F2DA;
   }
 
-  &__fourth {
+  &_fourth {
     background-color: #D5D4E1;
     padding: 10px 22px;
     margin-top: 50px;
   }
 
-  &__fifth {
+  &_fifth {
     background-color: #F3D0DB;
     padding: 10px 22px;
   }
 
-  &__sixth {
+  &_sixth {
     background-color: #E5EAF8;
     padding: 30px 0px;
   }

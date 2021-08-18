@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head> 
 <body>
     @@include('header/index.html')
     <main>
-    <section class="toys">
+    <section>
         <div class="container">
-            <h1 class="toys__title">Toy for kids</h1>
+            <h1 class="title">Toy for kids</h1>
             <div>
                 <ul class="outline breadcrumbs">
-                    <li><a href="#" class="breadcrumbs__item">Home</a></li>
-                    <li><a href="#" class="breadcrumbs__item">Catalog</a></li>
-                    <li><p class="breadcrumbs__active">Toys</p></li>
+                    <li><a href="#" class="breadcrumbs_item">Home</a></li>
+                    <li><a href="#" class="breadcrumbs_item">Catalog</a></li>
+                    <li><p class="breadcrumbs_active">Toys</p></li>
                 </ul>
             </div>
         </div>
@@ -36,7 +37,7 @@
             </div>
             <div class="color">
                 <h2>Color</h2>
-                    <ul class="checkbox">
+                    <ul class="checkbox reset">
                         @@include('checkbox/index.html',{
                             "id":"contant-cach-1",
                             "label":"contant-cach-1",
@@ -61,7 +62,7 @@
             </div>
             <div class="delivery">
                 <h2>Delivery</h2>
-                <ul class="radio">
+                <ul class="reset">
                     @@include('radio/index.html',{
                         "text":"Free shipping"
                     })
@@ -72,7 +73,7 @@
             </div>
             <div class="amount">
                 <h2>Amount</h2>
-                <ul class="prices">
+                <ul class="prices reset">
                     <li><button class="range checked">0-5</button></li>
                     <li><button class="range">10-20</button></li>
                     <li><button class="range">20-50</button></li>
@@ -84,7 +85,7 @@
         </div>
     </section>  
     <section class="container">
-        <ul class="row-products">
+        <ul class="reset">
             @@include('catalog-product/index.html',{
                 "href":"#",
                 "img":"../../static/images/products/products1.png",
@@ -130,7 +131,7 @@
         </ul>
         <div class="pagination">
             <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
+                <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4" class="arrow"/>
             </svg>
             <ul class="pages">
                 <li><a href="#" class="page special">1</a></li>
@@ -139,7 +140,7 @@
                 <li><a href="#" class="page">4</a></li>
             </ul> 
             <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
+                <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4" class="arrow"/>
             </svg>  
         </div>           
     </section>

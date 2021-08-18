@@ -1,5 +1,10 @@
 @import "../../components/additions";
 
+.reset {
+    padding: 0;
+    list-style-type: none;
+}
+
 h2 {
     margin: 0;
     max-width: 68px;
@@ -38,16 +43,6 @@ h3 {
 
 /* TOYS */
 
-.toys {
-    &__title {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 40px;
-        line-height: 110%;
-        color: #1E0606;
-        margin: 0;
-        margin-bottom: 15px;
-    }
-}
 
 .breadcrumbs {
     display: flex;
@@ -66,8 +61,6 @@ h3 {
 }
 
 .checkbox {
-    list-style-type: none;
-    padding: 0;
     align-items: center;
 }
 
@@ -110,20 +103,10 @@ h3 {
     position: relative;
 }
 
-.radio {
-    list-style-type: none;
-    padding: 0;
-}
-
 .amount {
     margin-left: 70px;
     margin-right: 60px;
     position: relative;
-}
-
-.prices {
-    list-style-type: none;
-    padding: 0;
 }
 
 .range {
@@ -153,11 +136,6 @@ h3 {
 
 /* PRODUCTS */
 
-.row-products {
-    padding: 0;
-    list-style-type: none;
-}
-
 .specification {
     font-size: 14px;
     line-height: 19px;
@@ -166,6 +144,10 @@ h3 {
     color: #1E0606;
     font-weight: normal;
     margin-bottom: 15px;
+}
+
+.prices {
+    display: flex;
 }
 
 .price {
@@ -181,4 +163,8 @@ h3 {
     color: #C29974;
 }
 
-
+.arrow:hover  {
+    stroke:#C29974;
+    transition: .4s;
+    cursor: pointer;
+}

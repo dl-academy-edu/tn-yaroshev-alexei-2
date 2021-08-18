@@ -3,20 +3,9 @@
 /* CONTACTS */
 
 .contacts {
-    &__title {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 40px;
-        line-height: 110%;
-        color: #1E0606;
-        margin: 0;
-        margin-bottom: 15px;
-    }
-
-    &__main {
-        @include display;
+    @include display;
         margin-top: 50px;
-    }
-
+    
     &__form {
         max-width: 680px;
         width: 100%;

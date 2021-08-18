@@ -1,6 +1,19 @@
 
 @import "./additions";
 
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 110%;
+    color: #1E0606;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.reset {
+    padding: 0;
+    list-style-type: none;
+}
 
 .button,
 .banner__basement-text,
@@ -138,19 +151,19 @@ img {
 .breadcrumbs {
     margin-bottom: 50px;
     
-    &__item {
+    &_item {
         font-style: italic;
         margin-bottom: 50px;
     }
 
-    &__item::after {
+    &_item::after {
         content: '>'; 
         margin-left: 20px; 
         margin-right: 20px; 
         color: #7f7f7f; 
     }
 
-    &__active {
+    &_active {
         opacity: 50%;
         font-style: italic;
         margin: 0;
