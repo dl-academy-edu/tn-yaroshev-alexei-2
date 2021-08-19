@@ -1,0 +1,20 @@
+
+.rating {
+
+&__item {
+    color: $light;
+    margin-right: 3px;
+    cursor: pointer;
+    transition: .4s;
+    }
+
+    &__item:hover,
+    &__item:hover ~ &__item {
+    fill:#C29974;
+    color: #C29974;
+    stroke: #C29974;
+
+    transform: scale(2, 2);
+    } 
+
+}

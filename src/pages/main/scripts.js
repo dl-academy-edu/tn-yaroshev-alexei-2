@@ -1,26 +1,36 @@
-var popupBtn = document.querySelector('.banner-js');
-var popupForm = document.querySelector('.popup-form');
-var popupOverlay = document.querySelector('.popup-overlay');
-var popupClose = document.querySelector('.popup-close');
-var input = popupForm.querySelector('input');
+var popup = document.querySelector('.popup');
+var buttonOpen = document.querySelector('.banner__btn_js');
+var buttonClose = popup.querySelector('.popup-close');
+var input = popup.querySelector('input');
 
-popupBtn.addEventListener('click', function() {
-    popupForm.classList.add('popup-open');
-    popupOverlay.classList.add('popup-overlay-open');
+buttonOpen.addEventListener('click', function() {
+    popup.classList.add('popup-open');
     input.focus();
 })
 
-popupClose.addEventListener('click', function() {
-    popupForm.classList.remove('popup-open');
-    popupOverlay.classList.remove('popup-overlay-open');
+buttonClose.addEventListener('click', function() {
+    popup.classList.remove('popup-open');
+})
+
+window.addEventListener('keydown', function(event) {
+    console.log(event);
+
+    if (event.code === "Escape") {
+        if (popup.classList.contains('popup-open')) {
+            popup.classList.remove('popup-open');
+        }
+    }
 })
 
 
-window.addEventListener('keydown', function(evt) {
-    if(evt.keyCode === 27) {
-        if(popupForm.classList.contains('popup-open')) {
-            popupForm.classList.remove('popup-open');
-            popupOverlay.classList.remove('popup-overlay-open');
-        }
-    }
+var buttonMobileHeader = document.querySelector('.mobile-header__menu_js');
+var buttonCloseMobileHeader = document.querySelector('.mobile-header__close_js');
+var MobileHeader = document.querySelector('.mobile-header');
+
+buttonMobileHeader.addEventListener('click', function() {
+    mobileHeader.classList.add('mobile-header__open');
+})
+
+buttonCloseMobileHeader.addEventListener('click', function() {
+    mobileHeader.classList.remove('mobile-header__open');
 })

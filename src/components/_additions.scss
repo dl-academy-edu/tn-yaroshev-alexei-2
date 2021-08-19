@@ -1,0 +1,19 @@
+$space: #1E0606;
+$light: #FFFFFF;
+
+@mixin color($color: #1E0606) {
+    color: $color;
+  }
+  
+@mixin background($background: #FFFFFF) {
+    background: $background;
+}
+
+@mixin display($display:flex) {
+    display: $display;
+}
+
+@mixin box-sizing($box-sizing: border-box) {
+    box-sizing:$box-sizing
+}
+  

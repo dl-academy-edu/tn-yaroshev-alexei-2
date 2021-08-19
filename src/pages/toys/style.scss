@@ -1,18 +1,28 @@
+@import "../../components/additions";
+
+.reset {
+    padding: 0;
+    list-style-type: none;
+}
+
 h2 {
     margin: 0;
     max-width: 68px;
     margin-bottom: 15px;
 }
 
+h3 {
+    margin: 0;
+}
+
 .color,
 .delivery,
 .amount {
-    margin-top: 42px;
-    
+    margin-top: 42px; 
 }
 
-.picture:hover::before,
-.picture:active::before {
+.product:hover::before,
+.product:active::before {
     content: 'Learn more';
     text-transform: uppercase;
     color: #1E0606;
@@ -31,64 +41,13 @@ h2 {
     margin: 70px;
 }
 
-.picture:hover::before {
-    opacity: 90%;
-}
-
-.picture:active::before {    
-    opacity: 0.67;
-}
-
-h3 {
-    margin: 0;
-}
-
-.outline {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.button {
-    background: #000000;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    max-width: 161px;
-    padding: 9px;
-    border: none;
-    text-transform: uppercase;
-    display: block;
-}
-
-.button:hover {
-    background: #C29974;
-}
-
-.button:active {
-    background: #CFAF91;
-}
-
-.button:disabled {
-   background: #C1C1C1;
-}
-
 /* TOYS */
 
-.title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    line-height: 110%;
-    color: #1E0606;
-    margin: 0;
-    margin-bottom: 15px;
-}
 
 .breadcrumbs {
     display: flex;
     margin-bottom: 50px;
-    padding: 0; 
+    padding: 0;
 }
 
 .sidebar {
@@ -101,13 +60,7 @@ h3 {
     margin: 42px 94px 123px 0px;
 }
 
-.checkboxes {
-    margin-bottom: 18px;
-}
-
 .checkbox {
-    list-style-type: none;
-    padding: 0;
     align-items: center;
 }
 
@@ -150,27 +103,17 @@ h3 {
     position: relative;
 }
 
-.radio {
-    list-style-type: none;
-    padding: 0;
-}
-
 .amount {
     margin-left: 70px;
     margin-right: 60px;
     position: relative;
 }
 
-.prices {
-    list-style-type: none;
-    padding: 0;
-}
-
 .range {
     width: 80px;
     height: 35px;
     padding: 0;
-    background: #FFFFFF;
+    @include background;
     border: none;
 }
 
@@ -193,12 +136,7 @@ h3 {
 
 /* PRODUCTS */
 
-.row {
-    padding: 0;
-    list-style-type: none;
-}
-
-.description {
+.specification {
     font-size: 14px;
     line-height: 19px;
     font-family: 'Open Sans', sans-serif;
@@ -206,6 +144,10 @@ h3 {
     color: #1E0606;
     font-weight: normal;
     margin-bottom: 15px;
+}
+
+.prices {
+    display: flex;
 }
 
 .price {
@@ -217,36 +159,12 @@ h3 {
     margin-bottom: 78px;
 }
 
-.pagination {
-    justify-content: space-between;
+.special {
+    color: #C29974;
 }
 
-.pages {
-    list-style-type: none;
-    justify-content: space-around;
+.arrow:hover  {
+    stroke:#C29974;
+    transition: .4s;
+    cursor: pointer;
 }
-
-.arrow {
-    margin-left: 113px;
-    margin-right: 113px;
-    max-width: 8px;
-    max-height: 12px;
-    width: 100%;
-    height: 100%;
-}
-
-.page {
-    margin-right: 64px;
-    max-width: 10px;
-    max-height: 20px;
-    width: 100%;
-    height: 100%;
-    color: #1E0606;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: bold;
-    size: 16px;
-    text-transform: uppercase;
-}
-
-

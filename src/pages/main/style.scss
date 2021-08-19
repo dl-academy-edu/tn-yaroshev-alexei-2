@@ -1,58 +1,60 @@
-.outline {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+@import "../../components/additions";
 
 /* BANNER */
 
-.banner-main {
-  max-width: 1180px;
-  width: 100%;
-  max-height: 372px;
-  background: #EEE4DB;
-}
+.banner {
+  &__main {
+    max-width: 1180px;
+    width: 100%;
+    max-height: 372px;
+    background: #EEE4DB;
+  }
 
+  &__text {
+    margin-top: 89px;
+    margin-right: 5px;
+    max-width: 308px;
+    width: 100%;
+  }
 
-.slide {
-  max-width: 31px;
-  max-height: 11px;
-}
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 110%;
+    @include color;
+    margin: 0;
+  }
 
-.slide-number {
-  padding: 17px 44px 0 28px;
-}
+  &__subtitle {
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 25px;
+    @include color;
+  }
 
-.number {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  font-size: 60px;
-  line-height: 73px;
-  color: rgba(30, 6, 6, 0.05);
-  margin: 0;
-}
+  &__logo {
+    margin-right: 99px;
+    top: -89px;
+    position: relative;
+  }
 
-.slide-name {
-  margin-top: 89px;
-  margin-right: 5px;
-  max-width: 308px;
-  width: 100%;
-}
-
-.banner-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
-  line-height: 110%;
-  color: #1E0606;
-  margin: 0;
-}
-
-.banner-manufacturer {
-  font-family: 'Crimson Text', serif;
-  font-size: 20px;
-  font-style: italic;
-  line-height: 25px;
-  color: #1E0606;
+  &__footer {
+    background: #C29974;
+    max-width: 1180px;
+    width: 100%;
+    max-height: 39px;
+    height: 100%;
+    padding: 11px 364px;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: $light;
+    font-size: 12px;
+    line-height: 0px;
+    width: 100%;
+    
+  }
 }
 
 .banner-logo {
@@ -61,153 +63,162 @@
   position: relative;
 }
 
-.undertable {
-  background: #C29974;
-  max-width: 1180px;
-  width: 100%;
-  max-height: 39px;
-  height: 100%;
-  padding: 11px 364px;
+.slider {
+  padding: 17px 44px 0 28px;
+
+  &__number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 73px;
+    color: rgba(30, 6, 6, 0.05);
+    margin: 0;
+  }
+
+  &__pagination {
+    max-width: 31px;
+    max-height: 11px;
+  }
+
+  &__button {
+    background-color: #D6CAC2;
+    height: 3px;
+    width: 31px;
+    margin-bottom: 11px;
+    border: 0px;
+  }
+
+  &__button:hover {
+    background-color: #725F5B;
+    height: 3px;
+    width: 31px;
+  }  
 }
 
-.undertable-text {
-  margin: 0;
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  color: #FFFFFF;
-  font-size: 12px;
-  line-height: 16px;
-  max-width: 500px;
-  width: 100%;
+.special {
+  background-color:  rgba(30, 6, 6, 0.6);
+  height: 3px;
+  width: 31px;
+  margin-bottom: 11px;
+  border: 0px;
 }
 
 /* CATEGORY PRODUCTS */
 
-.service-title {
-  margin-top: 90px;
-  font-size: 38px;
-  line-height: 46px;
-  font-family: 'Montserrat', sans-serif;
-  width: 454px;
-  height: 47px;
-  text-transform: uppercase;
-  max-height: 47px;
-  max-width: 454px;
-  width: 100%;
-  height: 100%;
+.service {
+  &__title {
+    margin-top: 90px;
+    font-size: 38px;
+    line-height: 46px;
+    font-family: 'Montserrat', sans-serif;
+    width: 454px;
+    height: 47px;
+    text-transform: uppercase;
+    max-height: 47px;
+    max-width: 454px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__basement {
+    margin-top: 25px;
+    display: flex;
+  }
+
+  &__arrows {
+    display: flex;
+  }
+
 }
 
-.category {
-  max-width: 1180px;
-  width: 100%;
-}
-
-.service-first:hover,
-.service-second:hover,
-.service-third:hover,
-.service-fourth:hover {
-  text-decoration-line: underline;
-}
-
-.block {
-  max-width: 244px;
-  text-transform: uppercase;
-  max-height: 244px;
-  height: 100%;
-  color: #FFFFFF;
-  margin: 0;
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  height: 100%;
-  font-size: 26px;
-  line-height: 32px;
-}
-
-.underservice {
-  margin-top: 25px;
-}
-
-.arrow1 {
+.wow {
   background-color: rgba(112, 187, 220, 0.2);
+  width: 37px;
+  height: 37px;
   max-width: 37px;
   max-height: 37px;
   height: 100%;
   width: 100%;
   padding: 5px 12px;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
-.underservice text {
-  font-size: 16px;
-  line-height: 22px;
-  max-width: 580px;
-  width: 100%;
-  max-height: 44px;
+.arrow {
+  stroke:#000000;
   height: 100%;
-  color: #1E0606;
-  font-family: 'Open Sans', sans-serif;
-  -webkit-text-align: start;
-      -moz-text-align: start;    
-          text-align: start;
+  width: 100%;
+  padding: 5px 12px;
 }
+
+.arrow:hover  {
+  stroke:#C29974;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.category {
+  max-width: 1180px;
+  width: 100%;
+  display: flex;
+}
+
 
 /* ABOUT */
 
 .about {
   margin-top: 70px;
+
+  &__picture {
+    max-width: 480px;
+    max-height: 559px;
+    margin-right: 120px;
+  }
+  
+  &__title {
+    font-size: 38px;
+    line-height: 46px;
+    margin-top: 30px;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;  
+    @include color;
+  }
+
+  &__item {
+    font-family: 'Crimson Text', serif;
+    font-size: 26px;
+    line-height: 32px;
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 22px;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
 }
 
-.about-logo {
-  max-width: 480px;
-  max-height: 559px;
-  margin-right: 120px;
-}
-
-.about-title {
-  font-size: 38px;
-  line-height: 46px;
-  margin-top: 30px;
-  margin-bottom: 17px;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;  
-  color: #1E0606;
-}
-
-.about-undertitle {
+.active {
   font-family: 'Crimson Text', serif;
-  font-size: 26px;
-  line-height: 32px;
-  font-style: italic;
-  font-weight: normal;
-  margin-bottom: 22px;
+      font-style: italic;
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 32px;
+      margin-bottom: 22px;
+      background-color: rgba(112, 187, 220, 0.2);
+      padding: 11px 180px 11px 60px;
+      max-width: 326px;
+      max-height: 55px;
+      left: -60px;
+      position: relative;
 }
-
-.about-undertitle-main {
-  font-family: 'Crimson Text', serif;
-  font-style: italic;
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 32px;
-  margin-bottom: 22px;
-  background-color: rgba(112, 187, 220, 0.2);
-  padding: 11px 180px 11px 60px;
-  max-width: 326px;
-  max-height: 55px;
-  left: -60px;
-  position: relative;
-}
-
 
 /* BRANDS */
 
 .brands {
   margin: 90px 110px;
-}
-
-.brands-outline {
-  list-style-type: none;
-  margin-top: 90px;
-  margin-bottom: 90px;
+  display: flex;
 }
 
 .brand {
@@ -217,36 +228,40 @@
 
 /* CONTACTS */
 
-.contacts-first {
-  background-color: #E1F0F7;
-  margin-right: 57px;
-  padding-left: 30px;
-  max-width: 543px;
-  width: 100%;
-  max-height: 236px;
-  height: 100%;
-  padding-bottom: 35px;
-}
+.contacts {
+  display: flex;
 
-.contacts-second {
-  background-color: #E1F0F7;
-  padding-left: 30px;
-  max-width: 543px;
-  width: 100%;
-  max-height: 209px;
-  height: 100%;
-}
+  &__about {
+    background-color: #E1F0F7;
+    margin-right: 57px;
+    padding-left: 30px;
+    max-width: 543px;
+    width: 100%;
+    max-height: 236px;
+    height: 100%;
+    padding-bottom: 35px;
+  }
 
-.contacts-title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 38px;
-  position: relative;
-  text-transform: uppercase;
-  color: #1E0606;
-  margin-top: 0;
-  top: -10px;
-  margin-bottom: 10px;
+  &__contacts {
+    background-color: #E1F0F7;
+    padding-left: 30px;
+    max-width: 543px;
+    width: 100%;
+    max-height: 209px;
+    height: 100%;
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    position: relative;
+    text-transform: uppercase;
+    @include color;
+    margin-top: 0;
+    top: -10px;
+    margin-bottom: 10px;
+  } 
 }
 
 /* BASIC */
@@ -255,7 +270,7 @@
 .contact-phone,
 .contant-email,
 .message {
-  background: #FFFFFF;
+  @include background;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
 }
@@ -296,7 +311,7 @@
   padding: 12px 20px;
   font-size: 16px;
   line-height: 25px;
-  background: #FFFFFF;
+  @include background;
 }
 .contact-form textarea {
   height: auto;

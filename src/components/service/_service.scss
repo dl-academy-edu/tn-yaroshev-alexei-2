@@ -1,60 +1,110 @@
-.group {
-    max-width: 280px;
-    width: 100%;
-    max-height: 270px;
-    margin-right: 35px;
-  }
+.block {
+  max-width: 244px;
+  text-transform: uppercase;
+  max-height: 244px;
+  height: 100%;
+  color: #FFFFFF;
+  margin: 0;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  font-size: 26px;
+  line-height: 32px;
+  transition: .4s;
+}
+
+.order:nth-child(4n) {
+  margin-left: 200px;
+  margin-right: 35px;
+}
+
+.options {
+  max-width: 280px;
+  width: 100%;
+  max-height: 270px;
+  margin-top: 50px;
+  margin-right: 35px;
+  margin-bottom: 20px;
+}
   
-  .service-first {
+.service {
+
+  &_first:hover,
+  &_second:hover,
+  &_third:hover,
+  &_fourth:hover,
+  &_fifth:hover,
+  &_sixth:hover {
+    text-decoration-line: underline;
+}
+
+  &_first {
     background-image: url("../../static/images/service/service-1.png");
     background-color: #DBE4DB;
     padding: 57px;
     max-height: 170px; 
   }
-  
-  .category-first {
+
+  &_second {
+    background-image: url("../../static/images/service/service-2.png");
+    background-color: #EADDD3;
+    padding: 120px 26px;
+    max-height: 244px;
+  }
+
+  &_third {
+    background-image: url("../../static/images/service/service-3.png");
+    background-color: #F8F2DA;
+    padding: 135px 100px;
+  }
+
+  &_fourth {
+    background-image: url("../../static/images/service/service-4.png");
+    background-color: #D5D4E1;
+    padding: 110px 40px;
+  }
+
+  &_fifth {
+    background-image: url("../../static/images/service/service-5.png");
+    background-color: #F3D0DB;
+    padding: 108px 89px;
+  }
+
+  &_sixth {
+    background-image: url("../../static/images/service/service-6.png");
+    background-color: #E5EAF8;
+    padding: 90px 100px;
+    margin-right: 0;
+  }
+}
+
+.category {
+  &_first {
     background-color: #DBE4DB;
     padding: 48px 18px;
   }
-  
-  .service-second {
-    background-image: url("../../static/images/service/service-2.png");
-    background-color: #EADDD3;
-    padding: 105px 26px;
-    max-height: 244px;
-  }
-  
-  .category-second {
+
+  &_second {
     background-color: #EADDD3;
     padding: 20px 18px;
   }
-  
-  .service-third {
-    background-image: url("../../static/images/service/service-3.png");
-    background-color: #F8F2DA;
-    width: 100%;
-    margin-right: 25px;
-    padding: 119px 100px;
-    max-height: 270px;  
-  }
-  
-  .category-third {
-    height: 100%;
+
+  &_third {
     background-color: #F8F2DA;
   }
-  
-  .service-fourth {
-    background-image: url("../../static/images/service/service-4.png");
-    background-color: #D5D4E1;
-    width: 100%;
-    padding: 110px 40px;
-    max-height: 270px;
-  }
-  
-  .category-fourth {
-    height: 100%;
+
+  &_fourth {
     background-color: #D5D4E1;
     padding: 10px 22px;
-    margin: 0;
+    margin-top: 50px;
   }
-  
+
+  &_fifth {
+    background-color: #F3D0DB;
+    padding: 10px 22px;
+  }
+
+  &_sixth {
+    background-color: #E5EAF8;
+    padding: 30px 0px;
+  }
+}

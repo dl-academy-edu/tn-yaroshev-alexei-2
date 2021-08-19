@@ -7,36 +7,37 @@
     <link rel="stylesheet" href="/common.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head> 
 <body>
     @@include('header/index.html')
     <main>
-    <section class="banner container">
+    <section class="container">
         <h1 class="title">Contact  Us</h1>
         <ul class="outline breadcrumbs">
-            <li><a href="#" class="pointer-home">Home</a></li>
-            <li><p class="pointer-next">Contact us</p></li>
+            <li><a href="#" class="breadcrumbs_item">Home</a></li>
+            <li><p class="breadcrumbs_active">Contact us</p></li>
         </ul>
         <div class="contacts">
             <h1 class="hidden">Contacts</h1>
-            <form action="#" method="POST" class="contact-form">
-                <fieldset class="contact-wrapper">
-                    <label for="contact-name">Name</label>
+            <form action="#" method="POST" class="contacts__form">
+                <fieldset class="contacts__wrapper">
+                    <label for="contacts__name">Name</label>
                     <input type="text" id="contact-name" placeholder="Ivan Ivanov" class="contact-name">
                 </fieldset> 
-                <fieldset class="contact-line">
-                    <div class="contact-wrapper contact-block">
-                        <label for="contact-phone">Phone</label>
-                        <input type="tel" id="contact-phone" class="contact-phone">    
+                <fieldset class="contacts__line">
+                    <div class="contacts__wrapper contacts__block">
+                        <label for="contacts__phone">Phone</label>
+                        <input type="tel" id="contacts__phone" class="contacts__phone">    
                     </div>
-                    <div class="contact-wrapper contact-block">
-                        <label for="contant-email">E-mail</label>
-                        <input type="email" id="contant-email" class="contant-email">
+                    <div class="contacts__wrapper contacts__block">
+                        <label for="contants__email">E-mail</label>
+                        <input type="email" id="contants__email" class="contants__email">
                     </div>
                 </fieldset>
-                <fieldset class="contact-wrapper">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="5" class="message"></textarea>
+                <fieldset class="contacts__wrapper">
+                    <label for="contacts__message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="5" class="contacts__message"></textarea>
                 </fieldset>
                 <fieldset>
                     <div class="checkbox">
@@ -46,10 +47,10 @@
                 </fieldset>
                 <button type="submit" class="button">Submit</button>
                 </form>
-            <div class="texts">
-                <p class="letter">Our support team are on-hand to assist with any issues you are experiencing.</p>
-                <p class="letter">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-                <p class="letter special">An expert is waiting to help you!</p>
+            <div class="contacts__description">
+                <p class="contacts__text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+                <p class="contacts__text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                <p class="contacts__text special">An expert is waiting to help you!</p>
             </div>
         </div>
     </section>

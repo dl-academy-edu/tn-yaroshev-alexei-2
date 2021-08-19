@@ -1,108 +1,94 @@
-.outline {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+@import "../../components/additions";
+
+/* CONTACTS */
+
+.contacts {
+    @include display;
+        margin-top: 50px;
+    
+    &__form {
+        max-width: 680px;
+        width: 100%;
+        background: #E5EAF8;
+        padding: 42px 40px;
+    }
+
+    &__form fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    &__form label {
+        font-size: 18px;
+        line-height: 22px;
+        color: #6B6A6A;
+        margin-bottom: 6px;
+    }
+
+    &__form input,
+    &__form textarea {
+        height: 50px;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        padding: 12px 20px;
+        font-size: 16px;
+        line-height: 25px;
+        @include background;
+    }
+
+    &__form textarea {
+        height: auto;
+        resize: none;
+    }
+
+    &__wrapper {
+        flex-direction: column;
+        @include display;
+    }
+
+    &__block {
+        max-width: 280px;
+        width: 100%;
+    }    
+
+    &__line {
+        justify-content: space-between;
+        @include display;
+    }
+
+    &__description {
+        margin-left: 120px;
+        margin-bottom: 20px;
+        max-width: 380px;
+    }
+
+    &__text {
+        font-family: 'Open Sans', sans-serif;
+        color: #1E0606;
+        font-size: 16px;
+        line-height: 22px;  
+    }
+
+    &__name,
+    &__phone,
+    &__email,
+    &__message {
+        @include background;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        transform: rotate(180deg);
+    }
+
+    &__message:hover,
+    &__name:hover,
+    &__phone:hover,
+    &__email:hover {
+        border: 2px solid rgba(0, 0, 0, 0.3);
+    }
 }
 
-.button {
-    background: #000000;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    max-width: 161px;
-    padding: 9px;
-    border: none;
-    text-transform: uppercase;
-}
-
-.button:hover {
-    background: #C29974;
-}
-
-.button:active {
-    background: #CFAF91;
-}
-
-.button:disabled {
-   background: #C1C1C1;
-}
-
-/* CONTACT US */
-
-.banner {
-    margin-left: 110px;
-}
-
-.title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    line-height: 110%;
-    color: #1E0606;
-    margin: 0;
-    margin-bottom: 15px;
-}
-
-.breadcrumbs {
-    margin-bottom: 50px;
-    margin-top: 15px;
-    padding: 0; 
-}
-
-/* BASIC */
-
-.contact-name,
-.contact-phone,
-.contant-email,
-.message {
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-}
-
-
-.message:hover,
-.contact-name:hover,
-.contact-phone:hover,
-.contant-email:hover {
-    border: 2px solid rgba(0, 0, 0, 0.3);
-}
-
-.contact-form {
-    max-width: 680px;
-    width: 100%;
-    background: #E5EAF8;
-    padding: 42px 40px;
-}
-
-.contact-form fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-.contact-form label {
-    font-size: 18px;
-    line-height: 22px;
-    color: #6B6A6A;
-    margin-bottom: 6px;
-
-}
-
-.contact-form input,
-.contact-form textarea {
-    height: 50px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    padding: 12px 20px;
-    font-size: 16px;
-    line-height: 25px;
-    background: #FFFFFF;
-}
-.contact-form textarea {
-    height: auto;
-    resize: none;
-}
+/* CHECKBOX */
 
 .checkbox label {
     position: relative;
@@ -138,46 +124,11 @@
     opacity: 1;
 } 
 
-.contact-title {
-    font-weight: 900;
-    font-size: 50px;
-    line-height: 97.2%;
-    color: #00559D;
-    margin-bottom: 60px;
-}
-
-.contact-wrapper {
-    flex-direction: column;
-}
-
-.contact-block {
-    max-width: 280px;
-    width: 100%;
-}
-
-.contact-line {
-    justify-content: space-between;
-}
-
-.texts {
-    margin-left: 120px;
-    margin-bottom: 20px;
-    max-width: 380px;
-    
-}
-
-.letter {
-    font-family: 'Open Sans', sans-serif;
-    color: #1E0606;
-    font-size: 16px;
-    line-height: 22px;  
-}
-
 .special {
     font-size: 26px;
     line-height: 34px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: #C29974;
-    background-color: #FFFFFF;
+    @include background;
 }
