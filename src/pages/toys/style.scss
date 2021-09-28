@@ -168,3 +168,64 @@ h3 {
     transition: .4s;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .catalog-product {
+        max-width: 203px;
+        max-height: 288px;
+    }
+
+    .reset {
+        margin-bottom: 30px;
+    }
+
+    .sidebar {
+        padding: 30px 132px 30px 60px;
+    }
+
+    .cost {
+        margin-right: 75px;
+    }
+
+    .delivery {
+        margin-left: 92px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        margin-left: 20px;
+    }
+
+    .sidebar {
+        flex-wrap: wrap;
+        padding: 25px 67px 25px 20px;
+    }
+
+    .cost {
+        margin: 0;
+    }
+
+    .color {
+        margin-top: 25px;
+    }
+
+    .delivery {
+        margin: 0;
+        margin-top: 25px;
+    }
+
+    .amount {
+        margin: 0;
+    }
+
+    .apply {
+        margin: 0;
+        margin-left: 140px;
+    }
+
+    .catalog-product {
+        max-height: 160px;
+        max-width: 247px;
+    }
+}
