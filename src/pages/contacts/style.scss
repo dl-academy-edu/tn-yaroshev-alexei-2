@@ -132,3 +132,54 @@
     color: #C29974;
     @include background;
 }
+
+@media screen and (max-width: 375px) {
+    .contacts {
+        margin-top: 0;
+
+        &__description {
+            margin-left: 0;
+            max-width: 335px;
+        }
+
+        &__form {
+            max-width: 335px;
+        }
+
+        &__wrapper {
+            margin-bottom: 0;
+        }
+
+        &__message {
+            max-width: 255px;
+        }
+
+        &__line {
+            flex-direction: column;
+        }
+
+        &__block {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts{
+        flex-wrap: wrap;
+
+        &__text{
+            order: 1;
+            text-align: center;
+        }
+
+        &__form{
+            order: 3;
+        }
+
+    }
+    .special {
+        order: 2;
+    }
+}
+

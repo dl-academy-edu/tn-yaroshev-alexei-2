@@ -21,3 +21,9 @@
 .radios:checked + .fake-radio::before {
     opacity: 1;
 }
+
+@media screen and (max-width: 768px) {
+    .radio {
+        min-width: 131px;
+    }
+}

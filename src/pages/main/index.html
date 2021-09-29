@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Main page</title>
@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-con">
 </head> 
 <body>
     @@include('header/index.html')
@@ -34,10 +35,7 @@
                 <div class="banner__text">
                     <h1 class="banner__title">THE OOH NOO COLLECTION</h1>
                     <p class="banner__subtitle">Designed in Slovenia</p>
-                    @@include('button/index.html',{
-                        "text":"EXPLORE NOW",
-                        "class":"banner__btn_js"
-                    })
+                    <button class="button banner__btn_js">EXLPORE NOW</button>
                 </div>
                 <div>
                     <img src="../../static/images/banner1.png" alt="" width="635" height="461" class="banner-logo">
@@ -47,7 +45,7 @@
                 <p class="banner__footer-text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
             </div>    
         </section>  
-        <section class="service container">
+        <!-- <section class="service container">
             <h2 class="service__title">Category Products</h2>
             <ul class="outline category">
                 @@include('service/index.html',{
@@ -88,29 +86,29 @@
                         </svg> 
                     </li>
                 </ul>
-                <p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+                <p class="service__text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
             </div>
-        </section> 
+        </section>  -->
         <section class="about container">
-            <div>
+            <div class="about__left">
                 <img src="../../static/images/about1.jpg" alt="" width="480" height="559" class="about__picture">
             </div>
-            <div>
+            <div class="about__right">
                 <h2 class="about__title">DELIVERY</h2>
                 <ul class="reset">
                     <li class="about__item active">Delivery</li>
                     <li class="about__item">Guarantee</li>
                     <li class="about__item">Credit</li>
                 </ul>
-                <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply</p>
-                <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!
+                <p class="about__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply</p>
+                <p class="about__text">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!
                 </p>
                 @@include('button/index.html',{
                     "text":"LEARN MORE"
                 })
             </div>
-        </section> 
-        <section class="brands container">
+        </section>   
+        <!-- <section class="brands container">
             <h2 class="hidden">Brands</h2>
             <ul class="brands reset">
                 <li><img src="../../static/images/brands/brands1.png" alt="" width="193" height="60" class="brand"></li>
@@ -118,7 +116,7 @@
                 <li><img src="../../static/images/brands/brands3.png" alt="" width="216" height="46" class="brand"></li>
                 <li><img src="../../static/images/brands/brands4.png" alt="" width="211" height="40" class="brand"></li>
             </ul>
-        </section>
+        </section> -->
         <section class="contacts container">
             <div class="contacts__about">
                 <h2 class="contacts__title">Design Life Kids</h2>
@@ -129,7 +127,7 @@
             <div class="contacts__contacts">
                 <h2 class="contacts__title">Contacts</h2>
                 <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9d9c1686b00722d366841caabfd27a7cfcc272cc52922b0f55b56580d00e0d13&amp;source=constructor" width="500" height="240" frameborder="0"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9d9c1686b00722d366841caabfd27a7cfcc272cc52922b0f55b56580d00e0d13&amp;source=constructor" width="500" height="240" frameborder="0" class="map"></iframe>
             </div>
         </section>
     </main>
